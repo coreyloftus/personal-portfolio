@@ -23,11 +23,6 @@ a:hover {
 ul>li {
   list-style: none;
 }
-/* .content-container {
-  height:100%;
-  width:100%;
-  background-color: rgba(255, 255, 255, 0.14);
-} */
 
 /* Nav styling */
 .Nav {
@@ -105,24 +100,3 @@ display:flex;
   border: 2px solid white;
   margin:10px;
 }
-
-/* .stars {
-  position:absolute;
-  width:8px;
-  height:8px;
-  bottom:0;
-  border-radius: 50%;
-  background-color:yellow;
-}
-.star-1 {
-  left: 10%;
-  animation: star-field 5s forwards 5s infinite;
-}
-@keyframes star-field {
-  0% {
-    bottom:0;
-  } 
-  100% {
-    bottom:100%;
-  }
-} */

@@ -12,13 +12,8 @@ const Contact = (props) => {
                                 </a>
                                 <a
                                 className="link"
-                                href="https://github.com/coreyloftus" target="_blank" rel="noopener noreferrer">
+                                href="https://www.linkedin.com/in/corey-loftus/" target="_blank" rel="noopener noreferrer">
                                 💼 on LinkedIn
-                                </a>
-                                <a
-                                className="link"
-                                href="https://github.com/coreyloftus" target="_blank" rel="noopener noreferrer">
-                                🥋 on codedojo
                                 </a>
                                 <a
                                 className="link"

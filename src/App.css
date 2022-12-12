@@ -1,0 +1,57 @@
+*{
+  background-color: black;
+  margin:0;
+}
+.App {
+  height:100vh;
+  text-align: center;
+  color:white;
+}
+.Nav {
+  border: 2px solid white;
+  margin:10px;
+  height:10vh;
+}
+.Projects {
+  border: 2px solid white;
+  margin:10px;
+}
+.Bio {
+  border: 2px solid white;
+  margin:10px;
+}
+.Contact {
+  border: 2px solid white;
+  margin:10px;
+}
+.Hero {
+  border: 2px solid white;
+  margin:10px;
+}
+.content-container {
+  display:flex;
+  height:40vh;
+  width:100%;
+  background-color: rgba(255, 255, 255, 0.14);
+  margin: 10px 0px 0px 0px;
+}
+.stars {
+  position:absolute;
+  width:8px;
+  height:8px;
+  bottom:0;
+  border-radius: 50%;
+  color:yellow;
+}
+.star-1 {
+  left: 10%;
+  /* animation: star-field 1s forwards 1s infinite; */
+}
+@keyframes star-field {
+  0% {
+    bottom:0;
+  } 
+  100% {
+    bottom:100%;
+  }
+}

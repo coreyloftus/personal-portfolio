@@ -1,17 +1,32 @@
 import './App.css';
 const Contact = (props) => {
     return (
-        <div className="Contact">
-            <h3>Contact</h3>
-            <a
-            className="link"
-            href="https://github.com/coreyloftus"
-            target="_blank"
-            rel="noopener noreferrer"
-            >
-            Corey's Github Page
-            </a>
-            <div className="content-container"></div>
+        <div className="Contact" id="Contact">
+            <div className="content-container">
+                            <h4>Connect with me here:</h4>
+                    <div className='social-links'>
+                                <a
+                                className="link"
+                                href="https://github.com/coreyloftus" target="_blank" rel="noopener noreferrer">
+                                💻 on Github
+                                </a>
+                                <a
+                                className="link"
+                                href="https://github.com/coreyloftus" target="_blank" rel="noopener noreferrer">
+                                💼 on LinkedIn
+                                </a>
+                                <a
+                                className="link"
+                                href="https://github.com/coreyloftus" target="_blank" rel="noopener noreferrer">
+                                🥋 on codedojo
+                                </a>
+                                <a
+                                className="link"
+                                href="https://www.hackerrank.com/coreyloftus" target="_blank" rel="noopener noreferrer">
+                                👨🏻‍💻 on hackerrank
+                                </a>
+                    </div>
+                </div>
         </div>
     )
 }

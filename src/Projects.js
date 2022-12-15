@@ -19,7 +19,7 @@ const Projects = () => {
                         <li>Created December 2022</li>
                         <li>Displays data from the OpenBrewery DB API</li>
                         <li>HTML/CSS, JavaScript, React</li>
-                        <li><a href="https://dreamy-bienenstitch-fd35ba.netlify.app" target="_blank" rel="noopener noreferrer">Live deployment</a></li>
+                        <li><a href="https://brewerybuddy.netlify.app/" target="_blank" rel="noopener noreferrer">Live deployment</a></li>
                         <li><a href="https://github.com/jordbort/project-2-brewery-app" target="_blank" rel="noopener noreferrer">Github Repo</a></li>
                     </ul>
                 </div>

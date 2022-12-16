@@ -3,7 +3,7 @@ import './App.css';
 const About = (props) => {
     return (
         <div className="About" id="About">
-            <h3>About Corey</h3>
+            <h3 className="heading-2">About Me</h3>
             <div className="content-container">
                 <div className='education-box'>
                         <h4>Education:</h4>
@@ -23,6 +23,8 @@ const About = (props) => {
                             <li>JavaScript</li>
                             <li>React.js</li>
                             <li>Node.js</li>
+                            <li>MongoDB</li>
+                            <li>Mongoose</li>
                         </ul>
                 </div>
             </div>

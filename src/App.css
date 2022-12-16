@@ -97,7 +97,7 @@ ul>li {
 
 /* Projects styling */
 .Projects {
-  margin:10px;
+  margin:10px 10px 80px 10px;
 }
 .project-box {
   text-align: left;
@@ -105,7 +105,7 @@ ul>li {
 }
 /* About styling */
 .About {
-  margin:10px;
+  margin:10px 10px 80px 10px;
   text-align: center;
 }
 .education-box {
@@ -136,11 +136,11 @@ ul>li {
 .Hero {
   text-align: left;
   width:50%;
-  margin-left:10px;
   background-image: linear-gradient(to top right,#07494c, #20bac3,#BB2649);
   border-top-right-radius: 20px;
   border-top-left-radius: 20px;
   border-bottom-right-radius: 20px;
+  margin:10px 10px 80px 10px;
 }
 .Hero > .heading {
   /* background-image: linear-gradient(to right, rgba (0,100,100,.5)); */

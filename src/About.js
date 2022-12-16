@@ -6,7 +6,7 @@ const About = (props) => {
             <h3 className="heading-2">About Me</h3>
             <div className="content-container">
                 <div className='education-box'>
-                        <h4>Education:</h4>
+                        <h4 className='heading-3'>Education:</h4>
                         <ul>
                             <li>General Assembly Software Engineering Intensive</li>
                                 <ul>
@@ -16,7 +16,7 @@ const About = (props) => {
                         </ul>
                 </div>
                 <div className='technology-box'>
-                    <h4>Experienced in:</h4>
+                    <h4 className='heading-3'>Experienced in:</h4>
                         <ul>
                             <li>HTML</li>
                             <li>CSS</li>

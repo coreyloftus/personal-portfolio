@@ -1,5 +1,6 @@
 import './App.css';
-import { Route, Routes } from "react-router-dom"
+// import { Route } from 'react-router-dom'
+
 import Nav from './Nav';
 import Hero from './Hero';
 import Projects from './Projects';
@@ -10,16 +11,10 @@ function App() {
   return (
     <div className="App">
       <Nav />
-      {/* <Routes>
-        <Route path='/' element={<Hero />} />
-        <Route path='/projects' element={<Projects />} />
-        <Route path='/about' element={<About />} />
-        <Route path='/contact' element={<Contact />} />
-      </Routes> */}
-      <Hero />
-      <Projects />
-      <About />
-      <Contact />
+        <Hero />
+        <Projects />
+        <About />
+        <Contact />
     </div>
   );
 }

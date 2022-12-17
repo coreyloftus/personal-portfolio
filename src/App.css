@@ -79,7 +79,7 @@ ul>li {
   margin: 10px 0px 0px 0px;
 }
 .nav-container a {
-  background-color: #BB2649;
+  /* background-color: #BB2649; */
   padding:1.2rem;
   border-radius: 5px;
   text-decoration: none;
@@ -150,5 +150,11 @@ ul>li {
 @media only screen and (max-width: 840px){
   .Hero {
       width:60vw;
+  }
+}
+
+@media only screen and (max-width: 414px){
+  .Hero {
+    width:70vw;
   }
 }

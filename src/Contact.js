@@ -1,7 +1,7 @@
 import './App.css';
 const Contact = (props) => {
     return (
-        <div className="Contact" id="Contact">
+        <div className="Contact" id="contact">
                 <div>
                     <h4 className="heading-2">Connect with me here:</h4>
                     <div className='social-links'>

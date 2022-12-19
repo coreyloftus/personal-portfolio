@@ -2,7 +2,7 @@ import './App.css';
 
 const Projects = () => {
     return (
-        <div className="Projects">
+        <div className="Projects" id="projects">
             <h3 className="heading-2">Projects</h3>
             <div className="content-container">
                 <div className='project-box'>

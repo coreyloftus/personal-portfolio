@@ -2,7 +2,7 @@ import './App.css';
 
 const About = (props) => {
     return (
-        <div className="About" id="About">
+        <div className="About" id="about">
             <h3 className="heading-2">About Me</h3>
             <div className="content-container">
                 <div className='education-box'>

@@ -157,4 +157,8 @@ ul>li {
   .Hero {
     width:70vw;
   }
+  .nav-container a {
+    padding:0.7rem;
+
+  }
 }

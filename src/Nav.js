@@ -1,45 +1,27 @@
-// import { HashLink } from "react-router-hash-link"
-import './App.css';
+import { HashLink as Link } from "react-router-hash-link"
+import "./App.css"
 const Nav = (props) => {
     return (
-        <div className='Nav' id='Nav'>
+        <nav>  <div className='Nav' id='Nav'>
             <div className='nav-container'>
+                <p className="initials">CL</p>
                 <div className='links-box'>
-                    <p>
-                           <a href= "#">Home</a>
-                    </p>
-                    <p>
-                           <a href= "#">Projects</a> 
-                    </p>
-                    <p>
-                           <a href= "#">About</a> 
-                    </p>
-                    <p>
-                           <a href= "#">Contact</a> 
-                    </p>
-                    {/* <p>
-                        <HashLink smooth to="#">
+                        <Link smooth to="/#">
                             Home
-                        </HashLink>
-                    </p>
-                    <p>
-                        <HashLink smooth to="#projects">
+                        </Link>
+                        <Link smooth to="/#projects">
                             Projects
-                        </HashLink>
-                    </p>
-                    <p>
-                        <HashLink smooth to="#about">
+                        </Link>
+                        <Link smooth to="/#about">
                             About
-                        </HashLink>
-                    </p>
-                    <p>
-                        <HashLink smooth to='#contact'>
+                        </Link>
+                        <Link smooth to='/#contact'>
                             Contact
-                        </HashLink>
-                    </p> */}
-                </div>
-            </div>
-        </div>
+                        </Link>
+                  </div>
+              </div>
+          </div>
+        </nav>
     )
 }
 export default Nav

@@ -1,40 +1,23 @@
-import './App.css';
-import { HashLink as Link } from 'react-router-hash-link'
+import "./App.css"
 
-// import Nav from './Nav';
-import Hero from './Hero';
-import Projects from './Projects';
-import About from './About';
-import Contact from './Contact';
+import Nav from "./Nav"
+import Hero from "./Hero"
+import Projects from "./Projects"
+import About from "./About"
+import Contact from "./Contact"
+import Footer from "./Footer"
 
 function App() {
-  return (
-    <div className="App">
-       <nav>  <div className='Nav' id='Nav'>
-            <div className='nav-container'>
-                <div className='links-box'>
-                        <Link smooth to="/#">
-                            Home
-                        </Link>
-                        <Link smooth to="/#projects">
-                            Projects
-                        </Link>
-                        <Link smooth to="/#about">
-                            About
-                        </Link>
-                        <Link smooth to='/#contact'>
-                            Contact
-                        </Link>
-                  </div>
-              </div>
-          </div>
-        </nav>
-        <Hero id="#" />
-        <Projects />
-        <About />
-        <Contact />
-    </div>
-  );
+    return (
+        <div className="App">
+            <Nav />
+            <Hero />
+            <Projects />
+            <About />
+            <Contact />
+            <Footer />
+        </div>
+    )
 }
 
-export default App;
+export default App

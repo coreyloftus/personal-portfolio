@@ -70,8 +70,13 @@ ul>li {
   margin:10px 10px 80px 10px;
 }
 .project-box {
-  text-align: left;
+  display:flex;
+  justify-content: space-between;
   margin:10px 0px 0px 40px;
+}
+.project-card{
+  background-color: #07494c;
+  border-radius: 1.2rem;
 }
 /* About styling */
 .About {

@@ -4,6 +4,7 @@ const ContactForm = () => {
   const [formData, setFormData] = useState({
     name: "",
     email: "",
+    subject: "",
     message: "",
   })
   const form = useRef()
@@ -33,44 +34,58 @@ const ContactForm = () => {
         }
       )
     console.log(formData)
-    setFormData({ name: "", email: "", message: "" })
+    setFormData({ name: "", email: "", subject: "", message: "" })
   }
 
   return (
     <>
       <div className="ContactForm">
         <p className="heading-3">Let's talk!</p>
-        <form onSubmit={sendEmail}>
-          <label>
-            <span>Name:</span>
-            <input
-              type="text"
-              name="name"
-              value={formData.name}
-              onChange={handleChange}
-            />
-          </label>
-          <br />
-          <label>
-            <span>Email: </span>
-            <input
-              type="email"
-              name="email"
-              value={formData.email}
-              onChange={handleChange}
-            />
-          </label>
-          <br />
-          <label>
-            <span>Message: </span>
-            <textarea
-              name="message"
-              value={formData.message}
-              onChange={handleChange}
-            />
-          </label>
-          <br />
-          <button type="submit">Send</button>
+        <form ref={form} onSubmit={sendEmail}>
+          <ul>
+            <li className="half">
+              <input
+                type="text"
+                name="name"
+                placeholder="Name"
+                required
+                value={formData.name}
+                onChange={handleChange}
+              />
+            </li>
+
+            <li className="half">
+              <input
+                type="email"
+                name="email"
+                placeholder="Email"
+                required
+                value={formData.email}
+                onChange={handleChange}
+              />
+            </li>
+            <li>
+              <input
+                type="text"
+                name="subject"
+                placeholder="Subject"
+                value={formData.subject}
+                onChange={handleChange}
+                required
+              />
+            </li>
+            <li>
+              <textarea
+                name="message"
+                placeholder="Message"
+                required
+                value={formData.message}
+                onChange={handleChange}
+              />
+            </li>
+            <br />
+            <input type="submit" className="flat-button" value="Send" />
+          </ul>
         </form>
       </div>
     </>

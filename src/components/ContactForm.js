@@ -22,7 +22,7 @@ const ContactForm = () => {
     return (
         <>
             <div className="ContactForm">
-                <p className="heading-3">Want to talk? Send me a message here.</p>
+                <p className="heading-3">Let's talk!</p>
                 <form onSubmit={handleSubmit}>
                     <label>
                         <span>Name:</span>

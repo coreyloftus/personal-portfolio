@@ -1,5 +1,4 @@
 import { HashLink as Link } from "react-router-hash-link"
-import "./App.css"
 const Nav = (props) => {
     return (
         <nav>  <div className='Nav' id='Nav'>

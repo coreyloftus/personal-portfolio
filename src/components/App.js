@@ -1,29 +1,22 @@
-import "../style/App.scss"
-import { Route, Routes } from "react-router"
-
-import Nav from "./Nav"
-import Hero from "./Hero"
-import Projects from "./Projects"
 import About from "./About"
 import Contact from "./Contact"
-import Footer from "./Footer"
-import ContactForm from "./ContactForm"
+import Home from "./Home"
+import Navbar from "./Navbar"
+import Skills from "./Skills"
+import Work from "./Work"
+import {HashLink as Link} from 'react-router-hash-link'
 
 function App() {
-  return (
-    <div className="App">
-      {/* <Routes> */}
-        <Nav />
-        {/* <Route path="/" element={<Layout/>}></Route> */}
-        <Hero />
-        <Projects />
-        <About />
-        <Contact />
-        <ContactForm />
-        <Footer />
-      {/* </Routes> */}
-    </div>
-  )
+    return (
+        <div>
+            <Navbar />
+            <Home />
+            <About />
+            <Skills />
+            <Work />
+            <Contact />
+        </div>
+    )
 }
 
 export default App

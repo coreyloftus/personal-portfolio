@@ -1,55 +1,28 @@
-const About = (props) => {
-  return (
-    <div className="About" id="about">
-      <h3 className="heading-2">Experience</h3>
-      <div className="about-container">
-        <div className="work-box">
-          <h4 className="heading-3">Work Experience:</h4>
-          <div className="color-box">
-            <p>Sr. Manager of Sourcing and Development</p>
-            <p>Alfred (helloalfred.com)</p>
-            <p>May 2021 - June 2022</p>
-          </div>
-          <div className="color-box">
-            <p>Co-founder / Chief of People + Culture (C3P0)</p>
-            <p>HOM (iamhom.com)</p>
-            <p>Sept 2013 - May 2021</p>
-          </div>
-          <div className="color-box">
-            <p>Director of Customer Experience</p>
-            <p>The Open Center (opencenter.org)</p>
-            <p>Jan 2021 - June 2021</p>
-          </div>
+import React from "react"
+
+const About = () => {
+    return (
+        <div name="about" className="w-full h-screen bg-[#32171a] text-gray-300">
+            <div className="flex flex-col justify-center items-center w-full h-full">
+                <div className="max-w-[1000px] w-full grid grid-cols-2 gap-8">
+                    <div className="sm:text-right pb-8 pl-4">
+                        <p className="text-4xl font-bold inline border-b-4 border-red-500">About</p>
+                    </div>
+                    <div></div>
+                </div>
+                <div className="max-w-[1000px] w-full grid sm:grid-cols-2 gap-8 px-4">
+                    <div className="sm:text-right text-4xl font-bold">
+                        <p>Hi there, I’m Corey.</p>
+                    </div>
+                    <div>
+                        I’m a Full-Stack Developer. As a seasoned start-up founder, I’m adept at combining people skills and technical expertise with business smarts to identify and solve problems. I thrive in dynamic environments, learn quickly, and
+                        am a confident and experienced leader. My past careers in: 🏢 real estate technology, 🧘‍♂️ group fitness, 🛍️ retail, and 🎭 theater give me a broad range of points of view to help me understand any challenge. Sometimes I play
+                        guitar (love my Baby Martin) and video games (currently Metroid Dread). I love peanut butter.
+                    </div>
+                </div>
+            </div>
         </div>
-        <div className="education-box">
-          <h4 className="heading-3">Education:</h4>
-          <div className="color-box">
-            <p>General Assembly</p>
-            <p>Software Engineering Intensive</p>
-            <p>10/31/22 cohort (graduation Feb 2023)</p>
-          </div>
-          <div className="color-box">
-            <p>Elon University</p>
-            <p>BFA Music Theater (cum laude)</p>
-          </div>
-        <div className="technology-box">
-          <h4 className="heading-3">Experienced in:</h4>
-          <div className="color-box">
-            <ul>
-              <li>HTML</li>
-              <li>CSS</li>
-              <li>JavaScript</li>
-              <li>React.js</li>
-              <li>Node.js</li>
-              <li>MongoDB</li>
-              <li>Mongoose</li>
-              <li>Python</li>
-            </ul>
-          </div>
-        </div>
-        </div>
-      </div>
-    </div>
-  )
+    )
 }
+
 export default About

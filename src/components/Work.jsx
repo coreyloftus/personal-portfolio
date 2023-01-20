@@ -29,7 +29,7 @@ const Work = () => {
               </p>
               <div className="pt-8 text-center">
                 <a href="https://shoestring.netlify.app" target="_blank">
-                  <button className="text-center rounded-lg px-4 py-3 m-2 bg-white text-gray-700 font-bold text-lg">
+                  <button className="text-center rounded-lg px-4 py-3 m-2 bg-white text-gray-700 font-bold text-lg hover:bg-red-500 hover:border-red-500">
                     Demo
                   </button>
                 </a>
@@ -37,7 +37,7 @@ const Work = () => {
                   href="https://github.com/coreyloftus/shoe-string-be-dev"
                   target="_blank"
                 >
-                  <button className="text-center rounded-lg px-4 py-3 m-2 bg-white text-gray-700 font-bold text-lg">
+                  <button className="text-center rounded-lg px-4 py-3 m-2 bg-white text-gray-700 font-bold text-lg hover:bg-red-500 hover:border-red-500">
                     Code
                   </button>
                 </a>
@@ -58,7 +58,7 @@ const Work = () => {
               </p>
               <div className="pt-8 text-center">
                 <a href="https://brewerybuddy.netlify.app" target="_blank">
-                  <button className="text-center rounded-lg px-4 py-3 m-2 bg-white text-gray-700 font-bold text-lg">
+                  <button className="text-center rounded-lg px-4 py-3 m-2 bg-white text-gray-700 font-bold text-lg hover:bg-red-500 hover:border-red-500">
                     Demo
                   </button>
                 </a>
@@ -66,7 +66,7 @@ const Work = () => {
                   href="https://github.com/jordbort/project-2-brewery-app"
                   target="_blank"
                 >
-                  <button className="text-center rounded-lg px-4 py-3 m-2 bg-white text-gray-700 font-bold text-lg">
+                  <button className="text-center rounded-lg px-4 py-3 m-2 bg-white text-gray-700 font-bold text-lg hover:bg-red-500 hover:border-red-500">
                     Code
                   </button>
                 </a>

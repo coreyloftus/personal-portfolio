@@ -28,11 +28,11 @@ const Work = () => {
                 a Full Stack MERN app
               </p>
               <div className="pt-8 text-center">
-                <a href="https://shoestring.netlify.app" target="_blank">
+                {/* <a href="https://shoestring.netlify.app" target="_blank">
                   <button className="text-center rounded-lg px-4 py-3 m-2 bg-white text-gray-700 font-bold text-lg hover:bg-red-500 hover:border-red-500">
                     Demo
                   </button>
-                </a>
+                </a> */}
                 <a
                   href="https://github.com/coreyloftus/shoe-string-be-dev"
                   target="_blank"
@@ -57,11 +57,11 @@ const Work = () => {
                 made with React JS
               </p>
               <div className="pt-8 text-center">
-                <a href="https://brewerybuddy.netlify.app" target="_blank">
+                {/* <a href="https://brewerybuddy.netlify.app" target="_blank">
                   <button className="text-center rounded-lg px-4 py-3 m-2 bg-white text-gray-700 font-bold text-lg hover:bg-red-500 hover:border-red-500">
                     Demo
                   </button>
-                </a>
+                </a> */}
                 <a
                   href="https://github.com/jordbort/project-2-brewery-app"
                   target="_blank"

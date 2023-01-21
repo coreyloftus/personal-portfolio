@@ -36,6 +36,7 @@ const Work = () => {
                 <a
                   href="https://github.com/coreyloftus/shoe-string-be-dev"
                   target="_blank"
+                  rel="noreferrer"
                 >
                   <button className="text-center rounded-lg px-4 py-3 m-2 bg-white text-gray-700 font-bold text-lg hover:bg-red-500 hover:border-red-500">
                     Code
@@ -65,6 +66,7 @@ const Work = () => {
                 <a
                   href="https://github.com/jordbort/project-2-brewery-app"
                   target="_blank"
+                  rel="noreferrer"
                 >
                   <button className="text-center rounded-lg px-4 py-3 m-2 bg-white text-gray-700 font-bold text-lg hover:bg-red-500 hover:border-red-500">
                     Code

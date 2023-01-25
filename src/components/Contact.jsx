@@ -40,13 +40,13 @@ const Contact = (props) => {
   return (
     <div name="contact" className="w-full h-screen flex bg-[#32171a] text-gray-300 justify-center items-center p-4">
             <form re={form} onSubmit={handleSubmit} action="" className="flex flex-col max-w-[600px] w-full">
-                <div className="pb-8">
+                <div className="pb-4">
                     <p className="text-4xl font-bold inline border-b-4 border-red-500 text-gray-300">Contact</p>
                     <p className="text-gray-300 py-4">// Submit the form below to message me, or email me at: <a href="mailto:coreyloftus@gmail.com">coreyloftus@gmail.com</a>.</p>
                 </div>
-                <input className="" type="text" placeholder="Name" name=" Name" onChange={handleChange}/>
-                <input className="my-4 p-2" type="email" placeholder=" Email" name="name" onChange={handleChange}/>
-                <textarea rows="10" name="message" placeholder=" Message" onChange={handleChange}></textarea>
+                <input className="my-1 p-2" type="text" placeholder="Name" name="Name" onChange={handleChange}/>
+                <input className="my-4 p-2" type="email" placeholder="Email" name="name" onChange={handleChange}/>
+                <textarea className="my-1 p-2" rows="10" name="message" placeholder="Message" onChange={handleChange}></textarea>
                 <button className='text-white border-2 hover:bg-red-500 hover:border-red-500 px-4 py-3 my-8 mx-auto flex items-center'>Send</button>
             </form>
         </div>

@@ -1,5 +1,5 @@
-import resume from "../Assets/Corey-Loftus-Resume.pdf"
-import { HiArrowNarrowLeft, HiArrowNarrowRight } from "react-icons/hi"
+import resume from "../Assets/Corey Loftus - Software Engineer.pdf"
+import { HiArrowNarrowLeft } from "react-icons/hi"
 
 const About = () => {
   return (

@@ -33,9 +33,9 @@ const Work = () => {
   return (
     <div
       name="work"
-      className="w-full h-screen md:h-screen text-gray-300 bg-[#32171a] py-8"
+      className="w-full h-full md:h-screen text-gray-300 bg-[#32171a] py-8"
     >
-      <div className="max-w-[1000px] h-full mx-auto p-4 flex flex-col justify-center items-center">
+      <div className="max-w-[1000px] md:h-screen h-full mx-auto p-4 flex flex-col justify-center items-center">
         <div className="pb-8">
           <p className="text-4xl font-bold inline border-b-4 text-gray-300 border-red-500">
             Work
@@ -58,8 +58,8 @@ const Work = () => {
                     <p className="text-lg text-white tracking-wider text-center">
                       {work.subtitle}
                     </p>
-                    <p className="text-lg font-bold text-white tracking-wider text-center">
-                      Made with: {work.techstack}
+                    <p className="text-lg text-white tracking-wider text-center">
+                      Coded in: <span className="font-bold">{work.techstack}</span>
                     </p>
                     <div className="pt-8 text-center">
                       <a href={work.deploy} target="_blank" rel="noreferrer">

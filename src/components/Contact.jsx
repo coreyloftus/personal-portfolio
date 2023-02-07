@@ -38,8 +38,9 @@ const Contact = (props) => {
   }
   
   return (
-    <div name="contact" className="w-full h-screen flex bg-[#32171a] text-gray-300 justify-center items-center p-4">
-            <form re={form} onSubmit={handleSubmit} action="" className="flex flex-col max-w-[600px] w-full">
+    <div name="contact" className="w-full h-screen flex bg-[#32171a] text-gray-300 justify-center items-center py-8">
+      <div className="max-w-[1000px] h-full mx-auto flex flex-col justify-center items-center px-4 py-4">
+            <form re={form} onSubmit={handleSubmit} action="" className="flex flex-col max-w-[600px]">
                 <div className="pb-4">
                     <p className="text-4xl font-bold inline border-b-4 border-red-500 text-gray-300">Contact</p>
                     <p className="text-gray-300 py-4">// Submit the form below to message me, or email me at: <a href="mailto:coreyloftus@gmail.com">coreyloftus@gmail.com</a>.</p>
@@ -49,6 +50,7 @@ const Contact = (props) => {
                 <textarea className="my-1 p-2" rows="10" name="message" placeholder="Message" onChange={handleChange}></textarea>
                 <button className='text-white border-2 hover:bg-red-500 hover:border-red-500 px-4 py-3 my-8 mx-auto flex items-center'>Send</button>
             </form>
+        </div>
         </div>
   )
 }

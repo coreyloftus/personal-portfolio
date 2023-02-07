@@ -1,4 +1,4 @@
-import resume from "../Assets/Corey Loftus - Software Engineer.pdf"
+import resume from "../Assets/files/Corey Loftus - Software Engineer.pdf"
 import { HiArrowNarrowLeft } from "react-icons/hi"
 
 const About = () => {

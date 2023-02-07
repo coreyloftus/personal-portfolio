@@ -11,7 +11,7 @@ const Navbar = () => {
   const handleClick = () => setNav(!nav)
 
   return (
-    <div className="fixed w-full h-[80px] flex justify-between items-center px-4 bg-[#32171a] text-gray-300">
+    <div className="fixed w-full h-[60px] flex justify-between items-center px-4 bg-[#32171a] text-gray-300">
       <div>
         <Link to="home" smooth={true} duration={500}>
           <img src={Logo} alt="Logo" style={{ width: "50px" }} />

@@ -38,7 +38,7 @@ const Contact = (props) => {
   }
   
   return (
-    <div name="contact" className="w-full h-screen flex bg-[#32171a] text-gray-300 justify-center items-center py-8">
+    <div name="contact" className="w-full h-screen flex bg-[#32171a] text-gray-300 justify-center items-center pt-8">
       <div className="max-w-[1000px] h-full mx-auto flex flex-col justify-center items-center px-4 py-4">
             <form re={form} onSubmit={handleSubmit} action="" className="flex flex-col max-w-[600px]">
                 <div className="pb-4">

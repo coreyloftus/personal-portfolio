@@ -1,9 +1,9 @@
 import React, { useState } from "react"
-import Logo from "../Assets/icons8-cardinal-64.png"
+import Logo from "../Assets/images/icons8-cardinal-64.png"
 import { FaBars, FaTimes, FaGithub, FaLinkedin } from "react-icons/fa"
 import { HiOutlineMail } from "react-icons/hi"
 import { BsFillPersonLinesFill } from "react-icons/bs"
-import resume from "../Assets/Corey Loftus - Software Engineer.pdf"
+import resume from "../Assets/files/Corey Loftus - Software Engineer.pdf"
 import { Link } from "react-scroll"
 
 const Navbar = () => {

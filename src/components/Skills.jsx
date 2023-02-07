@@ -1,12 +1,5 @@
 import React from "react"
-import HTML from "../Assets/html.png"
-import CSS from "../Assets/css.png"
-import JavaScript from "../Assets/javascript.png"
-import ReactImg from "../Assets/react.png"
-import Mongo from "../Assets/mongo.png"
-import Postgres from "../Assets/postgres.png"
-import Python from "../Assets/python.png"
-import Express from "../Assets/express.png"
+import images from '../Assets/images/images'
 const Skills = () => {
     return (
         <>
@@ -19,35 +12,35 @@ const Skills = () => {
                     </div>
                     <div className="w-full grid grid-cols-2 sm:grid-cols-4 gap-4 text-center py-8">
                         <div className="shadow-md shadow-[#040c16] hover:scale-110 duration-500">
-                            <img className="w-20 mx-auto" src={HTML} alt="HTML icon" />
+                            <img className="w-20 mx-auto" src={images.html} alt="HTML icon" />
                             <p>HTML</p>
                         </div>
                         <div className="shadow-md shadow-[#040c16] hover:scale-110 duration-500">
-                            <img className="w-20 mx-auto" src={CSS} alt="CSS icon" />
+                            <img className="w-20 mx-auto" src={images.css} alt="CSS icon" />
                             <p>CSS</p>
                         </div>
                         <div className="shadow-md shadow-[#040c16] hover:scale-110 duration-500">
-                            <img className="w-20 mx-auto" src={JavaScript} alt="JavaScript icon" />
+                            <img className="w-20 mx-auto" src={images.javascript} alt="JavaScript icon" />
                             <p>JavaScript</p>
                         </div>
                         <div className="shadow-md shadow-[#040c16] hover:scale-110 duration-500">
-                            <img className="w-20 mx-auto" src={ReactImg} alt="React icon" />
+                            <img className="w-20 mx-auto" src={images.react} alt="React icon" />
                             <p>React</p>
                         </div>
                         <div className="shadow-md shadow-[#040c16] hover:scale-110 duration-500">
-                            <img className="w-20 mx-auto" src={Express} alt="Express icon" />
+                            <img className="w-20 mx-auto" src={images.express} alt="Express icon" />
                             <p>Express</p>
                         </div>
                         <div className="shadow-md shadow-[#040c16] hover:scale-110 duration-500">
-                            <img className="w-20 mx-auto" src={Mongo} alt="Mongo icon" />
+                            <img className="w-20 mx-auto" src={images.mongo} alt="Mongo icon" />
                             <p>MongoDB</p>
                         </div>
                         <div className="shadow-md shadow-[#040c16] hover:scale-110 duration-500">
-                            <img className="w-20 mx-auto" src={Python} alt="Python icon" />
+                            <img className="w-20 mx-auto" src={images.python} alt="Python icon" />
                             <p>Python</p>
                         </div>
                         <div className="shadow-md shadow-[#040c16] hover:scale-110 duration-500">
-                            <img className="w-20 mx-auto" src={Postgres} alt="Postgres icon" />
+                            <img className="w-20 mx-auto" src={images.postgres} alt="Postgres icon" />
                             <p>PostGres</p>
                         </div>
                     </div>

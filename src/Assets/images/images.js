@@ -8,16 +8,18 @@ import Python from "./python.png"
 import Express from "./express.png"
 import BreweryBuddy from "./Brewery-Buddy.png"
 import ShoeString from "./ShoeString.png"
+import CSSClips from "./css-clips.png"
 
 export default {
-    'html':HTML,
-    'css':CSS,
-    'javascript':JavaScript,
-    'react':ReactImg,
-    'express':Express,
-    'mongo':Mongo,
-    'postgres':Postgres,
-    'python':Python,
-    'brewerybuddy':BreweryBuddy,
-    'shoestring':ShoeString,
+  html: HTML,
+  css: CSS,
+  javascript: JavaScript,
+  react: ReactImg,
+  express: Express,
+  mongo: Mongo,
+  postgres: Postgres,
+  python: Python,
+  brewerybuddy: BreweryBuddy,
+  shoestring: ShoeString,
+  cssclips: CSSClips,
 }

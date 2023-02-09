@@ -9,6 +9,7 @@ import Express from "./express.png"
 import BreweryBuddy from "./Brewery-Buddy.png"
 import ShoeString from "./ShoeString.png"
 import CSSClips from "./css-clips.png"
+import SimonByCorey from "./Simon-by-Corey.png"
 
 export default {
   html: HTML,
@@ -22,4 +23,5 @@ export default {
   brewerybuddy: BreweryBuddy,
   shoestring: ShoeString,
   cssclips: CSSClips,
+  simonbycorey:SimonByCorey,
 }

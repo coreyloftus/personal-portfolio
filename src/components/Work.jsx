@@ -27,6 +27,14 @@ const workData = [
     frontend: "https://github.com/jordbort/project-2-brewery-app",
     deploy: "https://brewerybuddy.netlify.app",
   },
+  {
+    title: "Simon by Corey",
+    subtitle: "the classic game in vanilla JS",
+    techstack: "HTML / CSS / JS",
+    image: images.simonbycorey,
+    frontend: "https://github.com/coreyloftus/simon-by-corey",
+    deploy: "https://simon-by-corey.netlify.app/",
+  },
 ]
 
 const Work = () => {

@@ -55,36 +55,55 @@ const Work = () => {
           {/* each work item in the grid */}
           {workData.map((work) => {
             const list = (
-              <div>
-                <p className="text-2xl font-bold text-center pb-2">{work.title}</p>
-                <div
-                  style={{ backgroundImage: `url(${work.image})` }}
-                  className="bg-cover shadow-lg shadow-[#040c16] group container rounded-md flex justify-center items-center mx-auto content-div"
-                >
-                  {/* hover effects */}
-                  <div className="opacity-0 group-hover:opacity-80">
-                    <p className="text-lg text-white tracking-wider text-center">
+              <div className="border-transparent border-2 hover:border-white hover:border-2 rounded hover:bg-[#32171a]/[.6]">
+                <div className="">
+                  <p className="text-2xl font-bold text-center py-2">
+                    {work.title}
+                  </p>
+                  <div className="rounded flex flex-wrap justify-center items-center mx-auto">
+                    <div className="w-96">
+                      <img
+                        src={work.image}
+                        className="shadow-lg rounded max-w-full align-middle h-auto border-none object-contain"
+                      />
+                    </div>
+                  </div>
+                  <div className="py-4">
+                    <p className="text-lg text-white tracking-wider text-center px-2">
                       {work.subtitle}
                     </p>
                     <p className="text-lg text-white tracking-wider text-center">
-                      Coded in: <span className="font-bold">{work.techstack}</span>
+                      Coded in:{" "}
+                      <span className="font-bold">{work.techstack}</span>
                     </p>
                     <div className="pt-8 text-center">
                       <a href={work.deploy} target="_blank" rel="noreferrer">
-                        <button className="text-center rounded-lg px-4 py-3 m-2 bg-white text-gray-700 font-bold text-lg hover:bg-red-500 hover:border-red-500">
+                        <button className="text-center rounded-lg px-4 py-3 m-2 bg-white text-gray-700 font-bold text-lg hover:bg-red-500 ">
                           Live site
                         </button>
                       </a>
-                      {work.repo ? (<a href={work.frontend} target="_blank" rel="noreferrer">
-                        <button className="text-center rounded-lg px-4 py-3 m-2 bg-white text-gray-700 font-bold text-lg hover:bg-red-500 hover:border-red-500">
-                          Code
-                        </button>
-                      </a>):(null)}
-                      {work.frontend ? (<a href={work.frontend} target="_blank" rel="noreferrer">
-                        <button className="text-center rounded-lg px-4 py-3 m-2 bg-white text-gray-700 font-bold text-lg hover:bg-red-500 hover:border-red-500">
-                          Frontend
-                        </button>
-                      </a>):(null)}
+                      {work.repo ? (
+                        <a
+                          href={work.frontend}
+                          target="_blank"
+                          rel="noreferrer"
+                        >
+                          <button className="text-center rounded-lg px-4 py-3 m-2 bg-white text-gray-700 font-bold text-lg hover:bg-red-500 hover:border-red-500">
+                            Code
+                          </button>
+                        </a>
+                      ) : null}
+                      {work.frontend ? (
+                        <a
+                          href={work.frontend}
+                          target="_blank"
+                          rel="noreferrer"
+                        >
+                          <button className="text-center rounded-lg px-4 py-3 m-2 bg-white text-gray-700 font-bold text-lg hover:bg-red-500 hover:border-red-500">
+                            Frontend
+                          </button>
+                        </a>
+                      ) : null}
                       {work.backend ? (
                         <a href={work.backend} target="_blank" rel="noreferrer">
                           <button className="text-center rounded-lg px-4 py-3 m-2 bg-white text-gray-700 font-bold text-lg hover:bg-red-500 hover:border-red-500">

@@ -21,19 +21,19 @@ const Navbar = () => {
       {/* menu */}
       <ul className="hidden md:flex">
         <Link to="home" smooth={true} duration={500}>
-          <li>Home</li>
+          <li className="font-bold">Home</li>
         </Link>
         <Link to="about" smooth={true} duration={500}>
-          <li>About</li>
+          <li className="font-bold">About</li>
         </Link>
         <Link to="skills" smooth={true} duration={500}>
-          <li>Skills</li>
+          <li className="font-bold">Skills</li>
         </Link>
         <Link to="work" smooth={true} duration={500}>
-          <li>Work</li>
+          <li className="font-bold">Work</li>
         </Link>
         <Link to="contact" smooth={true} duration={500}>
-          <li>Contact</li>
+          <li className="font-bold">Contact</li>
         </Link>
       </ul>
 

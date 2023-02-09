@@ -51,5 +51,9 @@
     "autoprefixer": "^10.4.13",
     "postcss": "^8.4.21",
     "tailwindcss": "^3.2.4"
-  }
+  },
+  "main": "index.js",
+  "repository": "https://github.com/coreyloftus/personal-portfolio.git",
+  "author": "coreyloftus <coreyloftus@gmail.com>",
+  "license": "MIT"
 }

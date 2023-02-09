@@ -11,7 +11,7 @@ const Navbar = () => {
   const handleClick = () => setNav(!nav)
 
   return (
-    <div className="fixed w-full h-[80px] flex justify-between items-center px-4 bg-[#32171a] text-gray-300">
+    <div className="fixed w-full h-[60px] flex justify-between items-center px-4 bg-[#32171a] text-gray-300">
       <div>
         <Link to="home" smooth={true} duration={500}>
           <img src={Logo} alt="Logo" style={{ width: "50px" }} />
@@ -72,7 +72,7 @@ const Navbar = () => {
           <li className="w-[160px] h-[60px] flex justify-between items-center ml-[-100px] hover:ml-[-10px] duration-300 bg-blue-600">
             <a
               className="flex justify-between items-center w-full text-gray-300"
-              href="https://www.linkedin.com/in/corey-loftus/"
+              href="https://www.linkedin.com/in/corey-loftus/" target="_blank" rel="noreferrer"
             >
               Linkedin <FaLinkedin size={30} />
             </a>
@@ -80,7 +80,7 @@ const Navbar = () => {
           <li className="w-[160px] h-[60px] flex justify-between items-center ml-[-100px] hover:ml-[-10px] duration-300 bg-[#333333]">
             <a
               className="flex justify-between items-center w-full text-gray-300"
-              href="https://github.com/coreyloftus"
+              href="https://github.com/coreyloftus" target="_blank" rel="noreferrer"
             >
               Github <FaGithub size={30} />
             </a>

@@ -22,29 +22,32 @@ const About = () => {
           </div>
           {/* Grid Item 2 */}
           <div>
-            I’m a Full-Stack Developer. As a seasoned start-up founder, I’m
-            adept at combining people skills and technical expertise with
-            business smarts to identify and solve problems. I thrive in dynamic
-            environments, learn quickly, and am a confident and experienced
-            leader. My past careers in: 🏢 real estate technology, 🧘‍♂️ group
-            fitness, 🛍️ retail, and 🎭 theater give me a broad range of points
-            of view to help me understand any challenge. Sometimes I play guitar
-            (love my Baby Martin) and video games (currently Metroid Dread). I
-            love peanut butter.
+            <div>
+              I’m a Full-Stack Developer. As a seasoned start-up founder, I’m
+              adept at combining people skills and technical expertise with
+              business smarts to identify and solve problems. I thrive in
+              dynamic environments, learn quickly, and am a confident and
+              experienced leader.
+            </div>
+            <div>
+              My past careers in: 🏢 real estate technology, 🧘‍♂️ group fitness,
+              🛍️ retail, and 🎭 theater give me a broad range of points of view
+              to help me understand any challenge. Sometimes I play guitar (love
+              my Baby Martin) and video games (currently Metroid Dread). I love
+              peanut butter.
+            </div>
           </div>
         </div>
         {/* Resume Button */}
         <div className="py-4">
-          <button
-            className="text-white group border-2 px-4 py-3 my-2 flex items-center hover:bg-red-500 hover:border-red-500"
-            download
-            href={resume}
-          >
-            Download Resume
-            <span className="group-hover:-translate-x-2 repeat duration-500">
-              <HiArrowNarrowLeft className="ml-4" />
-            </span>
-          </button>
+          <a href={resume} download>
+            <button className="text-white group border-2 px-4 py-3 my-2 flex items-center hover:bg-red-500 hover:border-red-500">
+              Download Resume
+              <span className="group-hover:-translate-x-2 repeat duration-500">
+                <HiArrowNarrowLeft className="ml-4" />
+              </span>
+            </button>
+          </a>
         </div>
       </div>
     </div>

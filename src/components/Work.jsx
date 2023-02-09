@@ -4,15 +4,15 @@ import images from "../Assets/images/images"
 const workData = [
   {
     title: "CSS Clips",
-    subtitle: "A place to discover and create vanilla HTML/CSS animations",
+    subtitle: "Discover and create vanilla HTML/CSS animations",
     techstack: "Django / Python / Bulma",
     image: images.cssclips,
-    frontend: "https://github.com/coreyloftus/css-clips",
+    repo: "https://github.com/coreyloftus/css-clips",
     deploy: "http://css-clips.herokuapp.com",
   },
   {
     title: "ShoeString",
-    subtitle: "a Full Stack MERN app",
+    subtitle: "A guest book for the world",
     techstack: "React / Express / TailwindCSS",
     image: images.shoestring,
     frontend: "https://github.com/Calathea-Z/ShoeString",
@@ -21,7 +21,7 @@ const workData = [
   },
   {
     title: "Brewery Buddy",
-    subtitle: "front-end made with ReactJS",
+    subtitle: "Find local brews via the OpenBrewery API",
     techstack: "React / Sass",
     image: images.brewerybuddy,
     frontend: "https://github.com/jordbort/project-2-brewery-app",
@@ -36,7 +36,7 @@ const Work = () => {
       className="w-full h-full md:h-screen text-gray-300 bg-[#32171a] py-8"
     >
       <div className="max-w-[1000px] md:h-screen h-full mx-auto p-4 flex flex-col justify-center items-center">
-        <div className="pb-8">
+        <div className="pb-2">
           <p className="text-4xl font-bold inline border-b-4 text-gray-300 border-red-500">
             Work
           </p>
@@ -67,15 +67,20 @@ const Work = () => {
                           Live site
                         </button>
                       </a>
-                      <a href={work.frontend} target="_blank" rel="noreferrer">
+                      {work.repo ? (<a href={work.frontend} target="_blank" rel="noreferrer">
                         <button className="text-center rounded-lg px-4 py-3 m-2 bg-white text-gray-700 font-bold text-lg hover:bg-red-500 hover:border-red-500">
-                          Frontend Repo
+                          Code
                         </button>
-                      </a>
+                      </a>):(null)}
+                      {work.frontend ? (<a href={work.frontend} target="_blank" rel="noreferrer">
+                        <button className="text-center rounded-lg px-4 py-3 m-2 bg-white text-gray-700 font-bold text-lg hover:bg-red-500 hover:border-red-500">
+                          Frontend
+                        </button>
+                      </a>):(null)}
                       {work.backend ? (
                         <a href={work.backend} target="_blank" rel="noreferrer">
                           <button className="text-center rounded-lg px-4 py-3 m-2 bg-white text-gray-700 font-bold text-lg hover:bg-red-500 hover:border-red-500">
-                            Backend Repo
+                            Backend
                           </button>
                         </a>
                       ) : null}

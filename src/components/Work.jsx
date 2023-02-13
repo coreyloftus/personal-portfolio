@@ -55,7 +55,7 @@ const Work = () => {
           {/* each work item in the grid */}
           {workData.map((work) => {
             const list = (
-              <div className="hover:scale-105 duration-500 shadow-md shadow-[#32171a90] hover:shadow-[#32171a10]">
+              <div className="shadow-lg rounded-md shadow-[#160a0b] hover:shadow-2xl hover:bg-[#883c45f4] hover:scale-105 duration-500">
                 <div className="">
                   <p className="text-2xl font-bold text-center py-2">
                     {work.title}

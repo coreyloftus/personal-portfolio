@@ -22,14 +22,14 @@ const About = () => {
           </div>
           {/* Grid Item 2 */}
           <div>
-            <div>
+            <div className="py-2">
               I’m a Full-Stack Developer. As a seasoned start-up founder, I’m
               adept at combining people skills and technical expertise with
               business smarts to identify and solve problems. I thrive in
               dynamic environments, learn quickly, and am a confident and
               experienced leader.
             </div>
-            <div>
+            <div className="py-2">
               My past careers in: 🏢 real estate technology, 🧘‍♂️ group fitness,
               🛍️ retail, and 🎭 theater give me a broad range of points of view
               to help me understand any challenge. Sometimes I play guitar (love

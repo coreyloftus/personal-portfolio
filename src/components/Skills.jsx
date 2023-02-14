@@ -1,6 +1,41 @@
 import React from "react"
 import skillsImages from "../Assets/images/images"
 
+const skillsData = [
+      {
+        name: "HTML",
+        image: skillsImages.html,
+      },
+      {
+        name: "CSS",
+        image: skillsImages.css,
+      },
+      {
+        name: "JavaScript",
+        image: skillsImages.javascript,
+      },
+      {
+        name: "React",
+        image: skillsImages.react,
+      },
+      {
+        name: "Python",
+        image: skillsImages.python,
+      },
+      {
+        name: "Express",
+        image: skillsImages.express,
+      },
+      {
+        name: "MongoDB",
+        image: skillsImages.mongo,
+      },
+      {
+        name: "PostGres",
+        image: skillsImages.postgres,
+      },
+    ]
+
 const Skills = () => {
   return (
     <> 
@@ -16,7 +51,7 @@ const Skills = () => {
             </p>
           </div>
           <div className="w-full grid grid-cols-2 sm:grid-cols-4 gap-6 text-center py-6">
-            {skillsImages.skills.map((item) =>
+            {skillsData.map((item) =>
                 <div className="shadow-lg rounded-md shadow-[#160a0b] hover:bg-red-900 hover:scale-105 duration-500">
                   <img className="w-20 mx-auto" src={item.image} alt="{skill.name} icon" />
                   <p>{item.name}</p>

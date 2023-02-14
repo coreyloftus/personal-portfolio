@@ -6,7 +6,7 @@ const workData = [
     title: "CSS Clips",
     subtitle: "Discover and create vanilla HTML/CSS animations",
     techstack: "Django / Python / Bulma",
-    image: images.cssclips,
+    image: images.work.cssclips,
     repo: "https://github.com/coreyloftus/css-clips",
     deploy: "http://css-clips.herokuapp.com",
   },

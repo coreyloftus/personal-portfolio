@@ -12,56 +12,16 @@ import CSSClips from "./css-clips.png"
 import SimonByCorey from "./Simon-by-Corey.png"
 
 export default {
-  skills: [
-    {
-      name: "HTML",
-      image: HTML,
-    },
-    {
-      name: "CSS",
-      image: CSS,
-    },
-    {
-      name: "JavaScript",
-      image: JavaScript,
-    },
-    {
-      name: "React",
-      image: ReactImg,
-    },
-    {
-      name: "Python",
-      image: Python,
-    },
-    {
-      name: "Express",
-      image: Express,
-    },
-    {
-      name: "MongoDB",
-      image: Mongo,
-    },
-    {
-      name: "PostGres",
-      image: Postgres,
-    },
-  ],
-  work: [
-    {
-      name: "Brewery Buddy",
-      image: BreweryBuddy,
-    },
-    {
-      name: "ShoeString",
-      image: ShoeString,
-    },
-    {
-      name: "CSS Clips",
-      image: CSSClips,
-    },
-    {
-      name: "Simon by Corey",
-      image: SimonByCorey,
-    },
-  ],
+  html: HTML,
+  css: CSS,
+  javascript: JavaScript,
+  react: ReactImg,
+  express: Express,
+  mongo: Mongo,
+  postgres: Postgres,
+  python: Python,
+  brewerybuddy: BreweryBuddy,
+  shoestring: ShoeString,
+  cssclips: CSSClips,
+  simonbycorey:SimonByCorey,
 }

@@ -41,7 +41,7 @@ const Work = () => {
   return (
     <div
       name="work"
-      className="w-full md:h-screen text-gray-300 bg-[#32171a] py-[20vh]"
+      className="w-full md:h-screen text-gray-300 bg-[#32171a] lg:pt-[80vh] md:pt-[60vh] md:pb-[80vh] sm:pb-[0vh]"
     >
       <div className="max-w-[1000px] h-full mx-auto p-4 flex flex-col justify-center items-center">
         <div className="pb-2">

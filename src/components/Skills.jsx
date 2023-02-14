@@ -1,5 +1,5 @@
 import React from "react"
-import images from "../Assets/images/images"
+import skillsImages from "../Assets/images/images"
 
 const Skills = () => {
   return (
@@ -16,15 +16,23 @@ const Skills = () => {
             </p>
           </div>
           <div className="w-full grid grid-cols-2 sm:grid-cols-4 gap-6 text-center py-6">
-            <div className="shadow-lg rounded-md shadow-[#160a0b] hover:bg-[#883c45f4] hover:scale-105 duration-500">
+            {skillsImages.skills.map((item) =>
+                <div className="shadow-lg rounded-md shadow-[#160a0b] hover:bg-red-900 hover:scale-105 duration-500">
+                  <img className="w-20 mx-auto" src={item.image} alt="{skill.name} icon" />
+                  <p>{item.name}</p>
+                </div>
+            )}
+         </div>
+          {/* <div className="w-full grid grid-cols-2 sm:grid-cols-4 gap-6 text-center py-6">
+            <div className="shadow-lg rounded-md shadow-[#160a0b] hover:bg-red-900 hover:scale-105 duration-500">
               <img className="w-20 mx-auto" src={images.html} alt="HTML icon" />
               <p>HTML</p>
             </div>
-            <div className="shadow-lg rounded-md shadow-[#160a0b] hover:bg-[#883c45f4] hover:scale-105 duration-500">
+            <div className="shadow-lg rounded-md shadow-[#160a0b] hover:bg-red-900 hover:scale-105 duration-500">
               <img className="w-20 mx-auto" src={images.css} alt="CSS icon" />
               <p>CSS</p>
             </div>
-            <div className="shadow-lg rounded-md shadow-[#160a0b] hover:bg-[#883c45f4] hover:scale-105 duration-500">
+            <div className="shadow-lg rounded-md shadow-[#160a0b] hover:bg-red-900 hover:scale-105 duration-500">
               <img
                 className="w-20 mx-auto"
                 src={images.javascript}
@@ -32,7 +40,7 @@ const Skills = () => {
               />
               <p>JavaScript</p>
             </div>
-            <div className="shadow-lg rounded-md shadow-[#160a0b] hover:bg-[#883c45f4] hover:scale-105 duration-500">
+            <div className="shadow-lg rounded-md shadow-[#160a0b] hover:bg-red-900 hover:scale-105 duration-500">
               <img
                 className="w-20 mx-auto"
                 src={images.react}
@@ -40,7 +48,7 @@ const Skills = () => {
               />
               <p>React</p>
             </div>
-            <div className="shadow-lg rounded-md shadow-[#160a0b] hover:bg-[#883c45f4] hover:scale-105 duration-500">
+            <div className="shadow-lg rounded-md shadow-[#160a0b] hover:bg-red-900 hover:scale-105 duration-500">
               <img
                 className="w-20 mx-auto"
                 src={images.express}
@@ -48,7 +56,7 @@ const Skills = () => {
               />
               <p>Express</p>
             </div>
-            <div className="shadow-lg rounded-md shadow-[#160a0b] hover:bg-[#883c45f4] hover:scale-105 duration-500">
+            <div className="shadow-lg rounded-md shadow-[#160a0b] hover:bg-red-900 hover:scale-105 duration-500">
               <img
                 className="w-20 mx-auto"
                 src={images.mongo}
@@ -56,7 +64,7 @@ const Skills = () => {
               />
               <p>MongoDB</p>
             </div>
-            <div className="shadow-lg rounded-md shadow-[#160a0b] hover:bg-[#883c45f4] hover:scale-105 duration-500">
+            <div className="shadow-lg rounded-md shadow-[#160a0b] hover:bg-red-900 hover:scale-105 duration-500">
               <img
                 className="w-20 mx-auto"
                 src={images.python}
@@ -64,7 +72,7 @@ const Skills = () => {
               />
               <p>Python</p>
             </div>
-            <div className="shadow-lg rounded-md shadow-[#160a0b] hover:bg-[#883c45f4] hover:scale-105 duration-500">
+            <div className="shadow-lg rounded-md shadow-[#160a0b] hover:bg-red-900 hover:scale-105 duration-500">
               <img
                 className="w-20 mx-auto"
                 src={images.postgres}
@@ -72,7 +80,7 @@ const Skills = () => {
               />
               <p>PostGres</p>
             </div>
-          </div>
+          </div> */}
         </div>
       </div>
     </>

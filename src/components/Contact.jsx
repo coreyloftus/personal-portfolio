@@ -61,27 +61,27 @@ const Contact = (props) => {
               </p>
             </div>
             <input
-              className="my-1 p-2"
+              className="my-1 p-2 rounded-sm"
               type="text"
               placeholder="Name"
               name="Name"
               onChange={handleChange}
             />
             <input
-              className="my-4 p-2"
+              className="my-4 p-2 rounded-sm"
               type="email"
               placeholder="Email"
               name="name"
               onChange={handleChange}
             />
             <textarea
-              className="my-1 p-2"
+              className="my-1 p-2 rounded-sm"
               rows="10"
               name="message"
               placeholder="Message"
               onChange={handleChange}
             ></textarea>
-            <button className="text-white border-2 hover:bg-red-500 hover:border-red-500 px-4 py-3 my-8 mx-auto flex items-center">
+            <button className="text-white rounded-sm border-2 hover:bg-red-500 hover:border-red-500 px-4 py-3 my-8 mx-auto flex items-center">
               Send
             </button>
           </form>

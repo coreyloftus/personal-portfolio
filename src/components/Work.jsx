@@ -78,7 +78,7 @@ const Work = () => {
                     </p>
                     <div className="pt-8 text-center">
                       <a href={work.deploy} target="_blank" rel="noreferrer">
-                        <button className="text-center rounded-lg px-4 py-3 m-2 bg-white text-gray-700 font-bold text-lg hover:bg-red-500 ">
+                        <button className="text-center rounded-sm px-4 py-3 m-2 bg-white text-gray-700 font-bold text-lg hover:bg-red-500 ">
                           Live site
                         </button>
                       </a>
@@ -88,7 +88,7 @@ const Work = () => {
                           target="_blank"
                           rel="noreferrer"
                         >
-                          <button className="text-center rounded-lg px-4 py-3 m-2 bg-white text-gray-700 font-bold text-lg hover:bg-red-500 hover:border-red-500">
+                          <button className="text-center rounded-sm px-4 py-3 m-2 bg-white text-gray-700 font-bold text-lg hover:bg-red-500 hover:border-red-500">
                             Code
                           </button>
                         </a>
@@ -99,14 +99,14 @@ const Work = () => {
                           target="_blank"
                           rel="noreferrer"
                         >
-                          <button className="text-center rounded-lg px-4 py-3 m-2 bg-white text-gray-700 font-bold text-lg hover:bg-red-500 hover:border-red-500">
+                          <button className="text-center rounded-sm px-4 py-3 m-2 bg-white text-gray-700 font-bold text-lg hover:bg-red-500 hover:border-red-500">
                             Frontend
                           </button>
                         </a>
                       ) : null}
                       {work.backend ? (
                         <a href={work.backend} target="_blank" rel="noreferrer">
-                          <button className="text-center rounded-lg px-4 py-3 m-2 bg-white text-gray-700 font-bold text-lg hover:bg-red-500 hover:border-red-500">
+                          <button className="text-center rounded-sm px-4 py-3 m-2 bg-white text-gray-700 font-bold text-lg hover:bg-red-500 hover:border-red-500">
                             Backend
                           </button>
                         </a>

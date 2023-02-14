@@ -41,9 +41,9 @@ const Work = () => {
   return (
     <div
       name="work"
-      className="w-full h-auto md:h-screen text-gray-300 bg-[#32171a] pt-[40vh] pb-[150vh]"
+      className="w-full md:h-screen text-gray-300 bg-[#32171a] lg:pt-[80vh] md:pt-[60vh] md:pb-[80vh] sm:pb-[0vh]"
     >
-      <div className="max-w-[1000px] md:h-screen h-full mx-auto p-4 flex flex-col justify-center items-center">
+      <div className="max-w-[1000px] h-full mx-auto p-4 flex flex-col justify-center items-center">
         <div className="pb-2">
           <p className="text-4xl font-bold inline border-b-4 text-gray-300 border-red-500">
             Work
@@ -55,7 +55,7 @@ const Work = () => {
           {/* each work item in the grid */}
           {workData.map((work) => {
             const list = (
-              <div className="shadow-lg rounded-md shadow-[#160a0b] hover:shadow-2xl hover:bg-[#883c45f4] hover:scale-105 duration-500">
+              <div className="shadow-lg rounded-md shadow-[#160a0b] hover:shadow-2xl hover:bg-red-900 hover:scale-105 duration-500">
                 <div className="">
                   <p className="text-2xl font-bold text-center py-2">
                     {work.title}

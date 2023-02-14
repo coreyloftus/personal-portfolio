@@ -44,6 +44,7 @@ const About = () => {
             <button className="text-white rounded-sm group border-2 px-4 py-3 my-2 flex items-center hover:bg-red-500 hover:border-red-500">
               Download Resume
               <span className="group-hover:-translate-x-2 repeat duration-500">
+                {/* React icon arrow */}
                 <HiArrowNarrowLeft className="ml-4" />
               </span>
             </button>

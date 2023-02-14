@@ -16,7 +16,7 @@ const Home = () => {
         <p className="text-[#f29e9e] py-4 max-w-700">Nice to meet you.</p>
         <div>
           <Link to="about" smooth={true} duration={500}>
-            <button className="text-white group border-2 px-6 py-3 my-2 flex items-center hover:bg-red-500 hover:border-red-500">
+            <button className="text-white rounded-sm group border-2 px-6 py-3 my-2 flex items-center hover:bg-red-500 hover:border-red-500">
               See what I'm about
               <span className="group-hover:rotate-90 duration-300">
                 <HiArrowNarrowRight className="ml-2" />{" "}

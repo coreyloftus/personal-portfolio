@@ -84,7 +84,7 @@ const Work = () => {
                       </a>
                       {work.repo ? (
                         <a
-                          href={work.frontend}
+                          href={work.repo}
                           target="_blank"
                           rel="noreferrer"
                         >

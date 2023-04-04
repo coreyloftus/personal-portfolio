@@ -11,7 +11,7 @@ const Navbar = () => {
   const handleClick = () => setNav(!nav)
 
   return (
-    <div className="box-border top-0 w-screen p-2 px-4 text-gray-100 absolute">
+    <div className="box-border top-0 w-screen p-2 px-4 text-gray-100">
       <div className="flex items-center justify-between relative">
         {/* logo image */}
         <Link
@@ -97,47 +97,52 @@ const Navbar = () => {
         </div>
       )}
       {/* Social Icons */}
-      <div className="hidden lg:flex fixed flex-col top-[35%] left-0">
-        <ul>
-          <li className="w-[160px] h-[60px] flex justify-between items-center ml-[-100px] hover:ml-[-10px] duration-300 bg-blue-600">
-            <a
-              className="flex justify-between items-center w-full text-gray-300"
-              href="https://www.linkedin.com/in/corey-loftus/"
-              target="_blank"
-              rel="noreferrer"
-            >
-              Linkedin <FaLinkedin size={30} />
-            </a>
-          </li>
-          <li className="w-[160px] h-[60px] flex justify-between items-center ml-[-100px] hover:ml-[-10px] duration-300 bg-[#333333]">
-            <a
-              className="flex justify-between items-center w-full text-gray-300"
-              href="https://github.com/coreyloftus"
-              target="_blank"
-              rel="noreferrer"
-            >
-              Github <FaGithub size={30} />
-            </a>
-          </li>
-          <li className="w-[160px] h-[60px] flex justify-between items-center ml-[-100px] hover:ml-[-10px] duration-300 bg-[#6fc2e0]">
-            <a
-              className="flex justify-between items-center w-full text-gray-300"
-              href="mailto:coreyloftus@gmail.com"
-            >
-              Email <HiOutlineMail size={30} />
-            </a>
-          </li>
-          <li className="w-[160px] h-[60px] flex justify-between items-center ml-[-100px] hover:ml-[-10px] duration-300 bg-[#565f69]">
-            <a
-              className="flex justify-between items-center w-full text-gray-300"
-              href={resume}
-              download
-            >
-              Resume <BsFillPersonLinesFill size={30} />
-            </a>
-          </li>
-        </ul>
-      </div>
+      <div className="hidden lg:flex fixed top-[10%] right-0">
+  <ul className="space-y-4">
+    <li className="w-[160px] h-[60px] flex justify-between items-center hover:mr-[-10px] duration-300 bg-blue-600">
+      <a
+        className="flex justify-between items-center w-full"
+        href="https://www.linkedin.com/in/corey-loftus/"
+        target="_blank"
+        rel="noreferrer"
+      >
+        <FaLinkedin size={30} />
+        <span>Linkedin </span>
+      </a>
+    </li>
+    <li className="w-[160px] h-[60px] flex justify-between items-center hover:mr-[-10px] duration-300 bg-[#333333]">
+      <a
+        className="flex justify-between items-center w-full"
+        href="https://github.com/coreyloftus"
+        target="_blank"
+        rel="noreferrer"
+      >
+        <FaGithub size={30} />
+        <span>Github</span>
+      </a>
+    </li>
+    <li className="w-[160px] h-[60px] flex justify-between items-center hover:mr-[-10px] duration-300 bg-[#6fc2e0]">
+      <a
+        className="flex justify-between items-center w-full"
+        href="mailto:coreyloftus@gmail.com"
+      >
+        <HiOutlineMail size={30} />
+        <span>Email</span>
+      </a>
+    </li>
+    <li className="w-[160px] h-[60px] flex justify-between items-center hover:mr-[-10px] duration-300 bg-[#565f69]">
+      <a
+        className="flex justify-between items-center w-full text-gray-300"
+        href={resume}
+        download
+      >
+        <BsFillPersonLinesFill size={30} />
+        <span>Resume</span>
+      </a>
+    </li>
+  </ul>
+</div>
+
     </div>
   )
 }

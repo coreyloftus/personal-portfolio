@@ -3,7 +3,7 @@ import { HiArrowNarrowRight } from "react-icons/hi"
 import { Link } from "react-scroll"
 const Home = () => {
   return (
-    <div name="home" className="h-screen relative">
+    <div name="home" className="h-screen">
       {/* container */}
       <div className="max-w-[1000px] h-full px-8 flex flex-col justify-center">
         <p className="text-red-500">Hi there, my name is</p>

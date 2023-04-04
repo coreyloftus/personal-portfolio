@@ -39,7 +39,7 @@ const skillsData = [
 const Skills = () => {
   return (
     <>
-      <div className="w-full min-h-screen bg-[#32171a] text-gray-100">
+      <div className="w-full min-h-screen text-gray-100">
         {/* container */}
         <div name="skills" className="max-w-[1000px] h-full md:h-screen mx-auto p-4 flex flex-col justify-center items-center">
           <div>

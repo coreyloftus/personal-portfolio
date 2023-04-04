@@ -52,7 +52,7 @@ const workData = [
 
 const Work = () => {
   return (
-    <div name="work" className="w-full min-h-screen text-gray-100 bg-[#32171a]">
+    <div name="work" className="w-full min-h-screen text-gray-100">
       <div className="max-w-[1000px] h-full mx-auto p-4 flex flex-col justify-center items-center">
         <div className="pb-2">
           <p className="text-4xl font-bold inline border-b-4 text-gray-100 border-red-500">

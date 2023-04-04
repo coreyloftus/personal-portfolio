@@ -11,8 +11,8 @@ const Navbar = () => {
   const handleClick = () => setNav(!nav)
 
   return (
-    <div className="box-border relative top-0 w-screen px-4 bg-[#32171a] text-gray-100">
-      <div className="flex items-center justify-between">
+    <div className="box-border top-0 w-screen p-2 px-4 text-gray-100 absolute">
+      <div className="flex items-center justify-between relative">
         {/* logo image */}
         <Link
           to="home"
@@ -66,7 +66,7 @@ const Navbar = () => {
 
       {/* mobile menu */}
       {nav && (
-        <div className="mt-2">
+        <div className="mt-2 bg-[#32171a] z-30 relative">
           <ul className={!nav ? "hidden" : "w-full mt-2"}>
             <Link to="home" smooth={true} duration={500} onClick={handleClick}>
               <li className="py-2 text-xl">Home</li>

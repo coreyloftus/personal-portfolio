@@ -6,7 +6,7 @@ const About = () => {
     // About Container
     <div
       name="about"
-      className="w-full min-h-screen bg-[#32171a] text-gray-100"
+      className="w-full min-h-screen text-gray-100"
     >
       <div className="flex flex-col justify-center items-center w-full h-screen">
         <div className="max-w-[1000px] w-full grid grid-cols-2 gap-8">

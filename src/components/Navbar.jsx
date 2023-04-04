@@ -11,98 +11,136 @@ const Navbar = () => {
   const handleClick = () => setNav(!nav)
 
   return (
-    <div className="fixed w-full h-[60px] flex justify-between items-center px-4 bg-[#32171a] text-gray-300">
-      <div>
-        <Link to="home" smooth={true} duration={500}>
-          <img src={Logo} alt="Logo" style={{ width: "50px" }} />
+    <div className="box-border top-0 w-screen p-2 px-4 text-gray-100">
+      <div className="flex items-center justify-between relative">
+        {/* logo image */}
+        <Link
+          to="home"
+          smooth={true}
+          duration={500}
+          onClick={() => setNav(false)}
+          className="cursor-pointer"
+        >
+          <div className="text-left">
+            <img src={Logo} alt="Logo" style={{ width: "50px" }} />
+          </div>
         </Link>
-      </div>
 
-      {/* menu */}
-      <ul className="hidden md:flex">
-        <Link to="home" smooth={true} duration={500}>
-          <li className="font-bold">Home</li>
-        </Link>
-        <Link to="about" smooth={true} duration={500}>
-          <li className="font-bold">About</li>
-        </Link>
-        <Link to="skills" smooth={true} duration={500}>
-          <li className="font-bold">Skills</li>
-        </Link>
-        <Link to="work" smooth={true} duration={500}>
-          <li className="font-bold">Work</li>
-        </Link>
-        <Link to="contact" smooth={true} duration={500}>
-          <li className="font-bold">Contact</li>
-        </Link>
-      </ul>
-
-      {/* hamburger */}
-      <div onClick={handleClick} className="md:hidden z-10">
-        {!nav ? <FaBars /> : <FaTimes />}
+        {/* menu */}
+        <ul className="hidden md:flex">
+          <Link to="home" smooth={true} duration={500}>
+            <div className="border-b-2 border-transparent hover:border-gray-100 p-2">
+              <li>Home</li>
+            </div>
+          </Link>
+          <Link to="about" smooth={true} duration={500}>
+            <div className="border-b-2 border-transparent hover:border-gray-100 p-2">
+              <li>About</li>
+            </div>
+          </Link>
+          <Link to="skills" smooth={true} duration={500}>
+            <div className="border-b-2 border-transparent hover:border-gray-100 p-2">
+              <li>Skills</li>
+            </div>
+          </Link>
+          <Link to="work" smooth={true} duration={500}>
+            <div className="border-b-2 border-transparent hover:border-gray-100 p-2">
+              <li>Work</li>
+            </div>
+          </Link>
+          <Link to="contact" smooth={true} duration={500}>
+            <div className="border-b-2 border-transparent hover:border-gray-100 p-2">
+              <li>Contact</li>
+            </div>
+          </Link>
+        </ul>
+        {/* hamburger */}
+        <div onClick={handleClick} className="md:hidden z-10 cursor-pointer">
+          {!nav ? (
+            <FaBars size={40} className="text-gray-100" />
+          ) : (
+            <FaTimes size={40} className="text-gray-100" />
+          )}
+        </div>
       </div>
 
       {/* mobile menu */}
-      <ul
-        className={
-          !nav
-            ? "hidden"
-            : "absolute top-0 left-0 w-full h-screen bg-[#32171a] flex flex-col justify-center items-center"
-        }
-      >
-        <Link to="home" smooth={true} duration={500} onClick={handleClick}>
-          <li className="py-6 text-4xl">Home</li>
-        </Link>
-        <Link to="about" smooth={true} duration={500} onClick={handleClick}>
-          <li className="py-6 text-4xl">About</li>
-        </Link>
-        <Link to="skills" smooth={true} duration={500} onClick={handleClick}>
-          <li className="py-6 text-4xl">Skills</li>
-        </Link>
-        <Link to="work" smooth={true} duration={500} onClick={handleClick}>
-          <li className="py-6 text-4xl">Work</li>
-        </Link>
-        <Link to="contact" smooth={true} duration={500} onClick={handleClick}>
-          <li className="py-6 text-4xl">Contact</li>
-        </Link>
-      </ul>
+      {nav && (
+        <div className="mt-2 bg-[#32171a] z-30 relative">
+          <ul className={!nav ? "hidden" : "w-full mt-2"}>
+            <Link to="home" smooth={true} duration={500} onClick={handleClick}>
+              <li className="py-2 text-xl">Home</li>
+            </Link>
+            <Link to="about" smooth={true} duration={500} onClick={handleClick}>
+              <li className="py-2 text-xl">About</li>
+            </Link>
+            <Link
+              to="skills"
+              smooth={true}
+              duration={500}
+              onClick={handleClick}
+            >
+              <li className="py-2 text-xl">Skills</li>
+            </Link>
+            <Link to="work" smooth={true} duration={500} onClick={handleClick}>
+              <li className="py-2 text-xl">Work</li>
+            </Link>
+            <Link
+              to="contact"
+              smooth={true}
+              duration={500}
+              onClick={handleClick}
+            >
+              <li className="py-2 text-xl">Contact</li>
+            </Link>
+          </ul>
+        </div>
+      )}
       {/* Social Icons */}
-      <div className="hidden lg:flex fixed flex-col top-[35%] left-0">
-        <ul>
-          <li className="w-[160px] h-[60px] flex justify-between items-center ml-[-100px] hover:ml-[-10px] duration-300 bg-blue-600">
+      <div className="hidden lg:flex fixed top-[10%] right-0 shadow-xl shadow-black drop-shadow-xl">
+        <div className="hover:mr-[0] duration-300 mr-[-100px]">
+          <li className="w-[160px] h-[60px] flex justify-between items-center duration-300 bg-blue-600">
             <a
-              className="flex justify-between items-center w-full text-gray-300"
-              href="https://www.linkedin.com/in/corey-loftus/" target="_blank" rel="noreferrer"
+              className="flex justify-between items-center w-full"
+              href="https://www.linkedin.com/in/corey-loftus/"
+              target="_blank"
+              rel="noreferrer"
             >
-              Linkedin <FaLinkedin size={30} />
+              <FaLinkedin size={30} />
+              <span>Linkedin </span>
             </a>
           </li>
-          <li className="w-[160px] h-[60px] flex justify-between items-center ml-[-100px] hover:ml-[-10px] duration-300 bg-[#333333]">
+          <li className="w-[160px] h-[60px] flex justify-between items-center duration-300 bg-[#333333]">
             <a
-              className="flex justify-between items-center w-full text-gray-300"
-              href="https://github.com/coreyloftus" target="_blank" rel="noreferrer"
+              className="flex justify-between items-center w-full"
+              href="https://github.com/coreyloftus"
+              target="_blank"
+              rel="noreferrer"
             >
-              Github <FaGithub size={30} />
+              <FaGithub size={30} />
+              <span>Github</span>
             </a>
           </li>
-          <li className="w-[160px] h-[60px] flex justify-between items-center ml-[-100px] hover:ml-[-10px] duration-300 bg-[#6fc2e0]">
+          <li className="w-[160px] h-[60px] flex justify-between items-center duration-300 bg-[#6fc2e0]">
             <a
-              className="flex justify-between items-center w-full text-gray-300"
+              className="flex justify-between items-center w-full"
               href="mailto:coreyloftus@gmail.com"
             >
-              Email <HiOutlineMail size={30} />
+              <HiOutlineMail size={30} />
+              <span>Email</span>
             </a>
           </li>
-          <li className="w-[160px] h-[60px] flex justify-between items-center ml-[-100px] hover:ml-[-10px] duration-300 bg-[#565f69]">
+          <li className="w-[160px] h-[60px] flex justify-between items-center duration-300 bg-[#565f69]">
             <a
-              className="flex justify-between items-center w-full text-gray-300"
+              className="flex justify-between items-center w-full text-gray-100"
               href={resume}
               download
             >
-              Resume <BsFillPersonLinesFill size={30} />
+              <BsFillPersonLinesFill size={30} />
+              <span>Resume</span>
             </a>
           </li>
-        </ul>
+        </div>
       </div>
     </div>
   )

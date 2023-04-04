@@ -4,7 +4,7 @@ import { HiArrowNarrowLeft } from "react-icons/hi"
 const About = () => {
   return (
     // About Container
-    <div name="about" className="w-full h-screen bg-[#32171a] text-gray-300">
+    <div name="about" className="w-full min-h-screen bg-[#32171a] text-gray-100">
       <div className="flex flex-col justify-center items-center w-full h-full">
         <div className="max-w-[1000px] w-full grid grid-cols-2 gap-8">
           <div className="sm:text-right pb-8 pl-4">
@@ -13,12 +13,6 @@ const About = () => {
             </p>
           </div>
           <div></div>
-        </div>
-        <div className="relative overflow-hidden w-full pb-9/16">
-          <iframe width="100px" height="100px"
-            className="absolute inset-0"
-            src="https://cryo-labz.vercel.app"
-          ></iframe>
         </div>
         {/* Grid Container */}
         <div className="max-w-[1000px] w-full grid sm:grid-cols-2 gap-8 px-4">

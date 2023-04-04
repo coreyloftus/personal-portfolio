@@ -14,6 +14,12 @@ const About = () => {
           </div>
           <div></div>
         </div>
+        <div className="relative overflow-hidden w-full pb-9/16">
+          <iframe width="100px" height="100px"
+            className="absolute inset-0"
+            src="https://cryo-labz.vercel.app"
+          ></iframe>
+        </div>
         {/* Grid Container */}
         <div className="max-w-[1000px] w-full grid sm:grid-cols-2 gap-8 px-4">
           {/* Grid Item 1 */}

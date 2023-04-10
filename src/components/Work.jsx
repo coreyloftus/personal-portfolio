@@ -58,7 +58,7 @@ const Work = () => {
           <p className="text-4xl font-bold inline border-b-4 text-gray-100 border-red-500">
             Work
           </p>
-          <p className="py-6">// Check out some of my recent work.</p>
+          <p className="py-6">{"// Check out some of my recent work."}</p>
         </div>
         {/* grid parent container */}
         <div className="grid sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 px-4 pb-4">
@@ -74,6 +74,7 @@ const Work = () => {
                     <div className="w-96 p-2">
                       <img
                         src={work.image}
+                        alt={work.title}
                         className="shadow-lg rounded max-w-full align-middle h-auto border-none object-contain"
                       />
                     </div>

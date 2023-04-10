@@ -89,9 +89,9 @@ const Navbar = () => {
         </div>
       )}
       {/* Social Icons */}
-      <div className="hidden lg:flex fixed top-[10%] right-0 shadow-xl shadow-black drop-shadow-xl">
-        <div className="hover:mr-[0] duration-300 mr-[-100px]">
-          <li className="w-[160px] h-[60px] flex justify-between items-center duration-300 bg-blue-600">
+      <div className="hidden fixed lg:flex flex-col top-[10%] right-0 shadow-xl">
+        <ul>
+          <li className="w-[160px] h-[60px] flex justify-between items-center translate-x-[100px] hover:translate-x-[0px] duration-300 bg-blue-600">
             <a
               className="flex justify-between items-center w-full"
               href="https://www.linkedin.com/in/corey-loftus/"
@@ -102,7 +102,7 @@ const Navbar = () => {
               <span>Linkedin </span>
             </a>
           </li>
-          <li className="w-[160px] h-[60px] flex justify-between items-center duration-300 bg-[#333333]">
+          <li className="w-[160px] h-[60px] flex justify-between items-center translate-x-[100px] hover:translate-x-[0px] duration-300 bg-[#333333]">
             <a
               className="flex justify-between items-center w-full"
               href="https://github.com/coreyloftus"
@@ -113,7 +113,8 @@ const Navbar = () => {
               <span>Github</span>
             </a>
           </li>
-          <li className="w-[160px] h-[60px] flex justify-between items-center duration-300 bg-[#6fc2e0]">
+
+          <li className="w-[160px] h-[60px] flex justify-between items-center translate-x-[100px] hover:translate-x-[0px] duration-300 bg-[#6fc2e0]">
             <a
               className="flex justify-between items-center w-full"
               href="mailto:coreyloftus@gmail.com"
@@ -122,7 +123,8 @@ const Navbar = () => {
               <span>Email</span>
             </a>
           </li>
-          <li className="w-[160px] h-[60px] flex justify-between items-center duration-300 bg-[#565f69]">
+
+          <li className="w-[160px] h-[60px] flex justify-between items-center translate-x-[100px] hover:translate-x-[0px] duration-300 bg-[#565f69]">
             <a
               className="flex justify-between items-center w-full text-gray-100"
               href={resume}
@@ -132,7 +134,7 @@ const Navbar = () => {
               <span>Resume</span>
             </a>
           </li>
-        </div>
+        </ul>
       </div>
     </div>
   )

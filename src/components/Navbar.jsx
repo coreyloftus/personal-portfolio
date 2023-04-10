@@ -28,11 +28,6 @@ const Navbar = () => {
 
         {/* menu */}
         <ul className="hidden md:flex">
-          <Link to="home" smooth={true} duration={500}>
-            <div className="border-b-2 border-transparent hover:border-gray-100 p-2">
-              <li>Home</li>
-            </div>
-          </Link>
           <Link to="about" smooth={true} duration={500}>
             <div className="border-b-2 border-transparent hover:border-gray-100 p-2">
               <li>About</li>
@@ -68,9 +63,6 @@ const Navbar = () => {
       {nav && (
         <div className="mt-2 bg-[#32171a] z-30 relative">
           <ul className={!nav ? "hidden" : "w-full mt-2"}>
-            <Link to="home" smooth={true} duration={500} onClick={handleClick}>
-              <li className="py-2 text-xl">Home</li>
-            </Link>
             <Link to="about" smooth={true} duration={500} onClick={handleClick}>
               <li className="py-2 text-xl">About</li>
             </Link>

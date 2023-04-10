@@ -61,7 +61,7 @@ const Work = () => {
           <p className="py-6">// Check out some of my recent work.</p>
         </div>
         {/* grid parent container */}
-        <div className="grid sm:grid-cols-1 md:grid-cols-2 gap-6 px-4 pb-4">
+        <div className="grid sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 px-4 pb-4">
           {/* each work item in the grid */}
           {workData.map((work) => {
             const list = (

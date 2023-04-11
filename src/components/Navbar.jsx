@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from "react"
+import React, { useState } from "react"
 import Logo from "../Assets/images/icons8-cardinal-64.png"
 import { FaBars, FaTimes, FaGithub, FaLinkedin } from "react-icons/fa"
 import { HiOutlineMail } from "react-icons/hi"
@@ -10,12 +10,6 @@ import { DarkMode } from "./DarkMode"
 const Navbar = () => {
   const [nav, setNav] = useState(false)
   const handleClick = () => setNav(!nav)
-  // const [darkMode, setDarkMode] = useState(false)
-  // const handleDarkMode = () => setDarkMode(!darkMode)
-
-  // useEffect(() => {
-  //   document.body.classList.toggle("dark", darkMode)
-  // }, [darkMode])
 
   return (
     <div className="box-border top-0 w-screen p-2 font-bold text-gray-800 dark:text-gray-100 h-[10vh]">
@@ -59,17 +53,22 @@ const Navbar = () => {
             </div>
           </Link>
         </ul>
-        {/* dark mode button */}
+        <div className="flex items-center">
+          {/* dark mode button */}
 
-        <DarkMode />
+          <DarkMode />
 
-        {/* hamburger */}
-        <div onClick={handleClick} className="md:hidden z-10 cursor-pointer">
-          {!nav ? (
-            <FaBars size={40} className="dark:text-gray-100" />
-          ) : (
-            <FaTimes size={40} className="dark:text-gray-100" />
-          )}
+          {/* hamburger */}
+          <div
+            onClick={handleClick}
+            className="md:hidden pl-2 z-10 cursor-pointer"
+          >
+            {!nav ? (
+              <FaBars size={40} className="dark:text-gray-100" />
+            ) : (
+              <FaTimes size={40} className="dark:text-gray-100" />
+            )}
+          </div>
         </div>
       </div>
 

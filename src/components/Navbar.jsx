@@ -18,8 +18,8 @@ const Navbar = () => {
   // }, [darkMode])
 
   return (
-    <div className="box-border top-0 w-screen p-2 font-bold text-gray-800 dark:text-gray-100 dark:bg-[#020202]">
-      <div className="flex items-center justify-between relative p-2 dark:bg-gray-800 rounded-lg">
+    <div className="box-border top-0 w-screen p-2 font-bold text-gray-800 dark:text-gray-100 h-[10vh]">
+      <div className="flex items-center justify-between relative p-2 rounded-lg">
         {/* logo image */}
         <Link
           to="home"
@@ -30,31 +30,31 @@ const Navbar = () => {
         >
           <div className="flex items-center">
             <img src={Logo} alt="Logo" style={{ width: "50px" }} />
-            <span className="px-2 text-xl font-bold text-red-600 dark:text-red-500">
+            <span className="pl-2 text-2xl font-bold text-red-600 dark:text-red-500">
               Corey Loftus
             </span>
           </div>
         </Link>
 
         {/* menu */}
-        <ul className="hidden md:flex">
+        <ul className="hidden md:flex text-xl">
           <Link to="about" smooth={true} duration={500}>
-            <div className="border-b-2 border-transparent hover:border-gray-100 p-2">
+            <div className="border-b-2 border-transparent hover:border-gray-800 dark:hover:border-gray-100 p-2">
               <li>About</li>
             </div>
           </Link>
           <Link to="skills" smooth={true} duration={500}>
-            <div className="border-b-2 border-transparent hover:border-gray-100 p-2">
+            <div className="border-b-2 border-transparent hover:border-gray-800 dark:hover:border-gray-100 p-2">
               <li>Skills</li>
             </div>
           </Link>
           <Link to="work" smooth={true} duration={500}>
-            <div className="border-b-2 border-transparent hover:border-gray-100 p-2">
+            <div className="border-b-2 border-transparent hover:border-gray-800 dark:hover:border-gray-100 p-2">
               <li>Work</li>
             </div>
           </Link>
           <Link to="contact" smooth={true} duration={500}>
-            <div className="border-b-2 border-transparent hover:border-gray-100 p-2">
+            <div className="border-b-2 border-transparent hover:border-gray-800 dark:hover:border-gray-100 p-2">
               <li>Contact</li>
             </div>
           </Link>
@@ -111,7 +111,7 @@ const Navbar = () => {
         </div>
       )}
       {/* Social Icons */}
-      <div className="hidden fixed lg:flex flex-col top-[10%] right-0 text-gray-100">
+      <div className="hidden fixed lg:flex flex-col top-[15%] right-0 text-gray-100">
         <ul>
           <li className="w-[160px] h-[60px] flex justify-between items-center rounded-sm translate-x-[100px] hover:translate-x-[0px] duration-300 bg-blue-600">
             <a

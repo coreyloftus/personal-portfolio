@@ -8,7 +8,7 @@ import Work from "./Work"
 
 function App() {
   return (
-    <div className="bg-[#32171a]">
+    <div className="dark:bg-[#32171a]">
       <Navbar />
       <Home />
       <About />

@@ -40,7 +40,7 @@ const Contact = (props) => {
   return (
     <div
       name="contact"
-      className="w-full h-screen flex text-gray-100 justify-center items-center pt-8"
+      className="w-full h-screen flex text-gray-800 dark:text-gray-100 justify-center items-center pt-8"
     >
       <div className="pt-8">
         <div className="max-w-[1000px] h-full mx-auto flex flex-col justify-center items-center px-4 py-4">
@@ -50,7 +50,7 @@ const Contact = (props) => {
             action=""
             className="flex flex-col max-w-[600px]"
           >
-            <div className="pb-4 text-gray-100">
+            <div className="pb-4">
               <p className="text-4xl font-bold inline border-b-4 border-red-500">
                 Contact
               </p>
@@ -81,7 +81,7 @@ const Contact = (props) => {
               placeholder="Message"
               onChange={handleChange}
             ></textarea>
-            <button className="text-gray-100 rounded-sm border-2 hover:bg-red-500 hover:border-red-500 px-4 py-3 my-8 mx-auto flex items-center">
+            <button className="rounded-sm border-2 hover:text-gray-100 hover:bg-red-500 hover:border-red-500 px-4 py-3 my-8 mx-auto flex items-center">
               Send
             </button>
           </form>

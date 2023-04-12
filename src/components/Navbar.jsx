@@ -5,14 +5,15 @@ import { HiOutlineMail } from "react-icons/hi"
 import { BsFillPersonLinesFill } from "react-icons/bs"
 import resume from "../Assets/files/Corey Loftus - Software Engineer.pdf"
 import { Link } from "react-scroll"
+import { DarkMode } from "./DarkMode"
 
 const Navbar = () => {
   const [nav, setNav] = useState(false)
   const handleClick = () => setNav(!nav)
 
   return (
-    <div className="box-border top-0 w-screen p-2 px-4 text-gray-100">
-      <div className="flex items-center justify-between relative">
+    <div className="box-border top-0 w-screen p-2 font-bold text-gray-800 dark:text-gray-100 h-[10vh]">
+      <div className="flex items-center justify-between relative p-2 rounded-lg">
         {/* logo image */}
         <Link
           to="home"
@@ -21,50 +22,64 @@ const Navbar = () => {
           onClick={() => setNav(false)}
           className="cursor-pointer"
         >
-          <div className="text-left">
+          <div className="flex items-center">
             <img src={Logo} alt="Logo" style={{ width: "50px" }} />
+            <span className="pl-2 text-2xl font-bold text-red-600 dark:text-red-500">
+              Corey Loftus
+            </span>
           </div>
         </Link>
 
         {/* menu */}
-        <ul className="hidden md:flex">
+        <ul className="hidden md:flex text-xl">
           <Link to="about" smooth={true} duration={500}>
-            <div className="border-b-2 border-transparent hover:border-gray-100 p-2">
+            <div className="border-b-2 border-transparent hover:border-gray-800 dark:hover:border-gray-100 p-2">
               <li>About</li>
             </div>
           </Link>
           <Link to="skills" smooth={true} duration={500}>
-            <div className="border-b-2 border-transparent hover:border-gray-100 p-2">
+            <div className="border-b-2 border-transparent hover:border-gray-800 dark:hover:border-gray-100 p-2">
               <li>Skills</li>
             </div>
           </Link>
           <Link to="work" smooth={true} duration={500}>
-            <div className="border-b-2 border-transparent hover:border-gray-100 p-2">
+            <div className="border-b-2 border-transparent hover:border-gray-800 dark:hover:border-gray-100 p-2">
               <li>Work</li>
             </div>
           </Link>
           <Link to="contact" smooth={true} duration={500}>
-            <div className="border-b-2 border-transparent hover:border-gray-100 p-2">
+            <div className="border-b-2 border-transparent hover:border-gray-800 dark:hover:border-gray-100 p-2">
               <li>Contact</li>
             </div>
           </Link>
         </ul>
-        {/* hamburger */}
-        <div onClick={handleClick} className="md:hidden z-10 cursor-pointer">
-          {!nav ? (
-            <FaBars size={40} className="text-gray-100" />
-          ) : (
-            <FaTimes size={40} className="text-gray-100" />
-          )}
+        <div className="flex items-center">
+          {/* dark mode button */}
+
+          <DarkMode />
+
+          {/* hamburger */}
+          <div
+            onClick={handleClick}
+            className="md:hidden pl-2 z-10 cursor-pointer"
+          >
+            {!nav ? (
+              <FaBars size={40} className="dark:text-gray-100" />
+            ) : (
+              <FaTimes size={40} className="dark:text-gray-100" />
+            )}
+          </div>
         </div>
       </div>
 
       {/* mobile menu */}
       {nav && (
-        <div className="mt-2 bg-[#32171a] z-30 relative">
-          <ul className={!nav ? "hidden" : "w-full mt-2"}>
+        <div className="mt-2 bg-gray-200 dark:bg-red-900/40 z-30 relative">
+          <ul className={!nav ? "hidden" : "w-full mt-2 p-2 text-center"}>
             <Link to="about" smooth={true} duration={500} onClick={handleClick}>
-              <li className="py-2 text-xl">About</li>
+              <li className="py-2 text-xl hover:bg-gray-300 dark:hover:bg-red-700 border-b-2 border-red-800/50">
+                About
+              </li>
             </Link>
             <Link
               to="skills"
@@ -72,10 +87,14 @@ const Navbar = () => {
               duration={500}
               onClick={handleClick}
             >
-              <li className="py-2 text-xl">Skills</li>
+              <li className="py-2 text-xl hover:bg-gray-300 dark:hover:bg-red-700 border-b-2 border-red-800/50">
+                Skills
+              </li>
             </Link>
             <Link to="work" smooth={true} duration={500} onClick={handleClick}>
-              <li className="py-2 text-xl">Work</li>
+              <li className="py-2 text-xl hover:bg-gray-300 dark:hover:bg-red-700 border-b-2 border-red-800/50">
+                Work
+              </li>
             </Link>
             <Link
               to="contact"
@@ -83,15 +102,17 @@ const Navbar = () => {
               duration={500}
               onClick={handleClick}
             >
-              <li className="py-2 text-xl">Contact</li>
+              <li className="py-2 text-xl hover:bg-gray-300 dark:hover:bg-red-700">
+                Contact
+              </li>
             </Link>
           </ul>
         </div>
       )}
       {/* Social Icons */}
-      <div className="hidden fixed lg:flex flex-col top-[10%] right-0 shadow-xl">
+      <div className="hidden fixed lg:flex flex-col top-[15%] right-0 text-gray-100">
         <ul>
-          <li className="w-[160px] h-[60px] flex justify-between items-center translate-x-[100px] hover:translate-x-[0px] duration-300 bg-blue-600">
+          <li className="w-[160px] h-[60px] flex justify-between items-center rounded-sm translate-x-[100px] hover:translate-x-[0px] duration-300 bg-blue-600">
             <a
               className="flex justify-between items-center w-full"
               href="https://www.linkedin.com/in/corey-loftus/"
@@ -102,7 +123,7 @@ const Navbar = () => {
               <span>Linkedin </span>
             </a>
           </li>
-          <li className="w-[160px] h-[60px] flex justify-between items-center translate-x-[100px] hover:translate-x-[0px] duration-300 bg-[#333333]">
+          <li className="w-[160px] h-[60px] flex justify-between items-center rounded-sm translate-x-[100px] hover:translate-x-[0px] duration-300 bg-[#333333]">
             <a
               className="flex justify-between items-center w-full"
               href="https://github.com/coreyloftus"
@@ -114,7 +135,7 @@ const Navbar = () => {
             </a>
           </li>
 
-          <li className="w-[160px] h-[60px] flex justify-between items-center translate-x-[100px] hover:translate-x-[0px] duration-300 bg-[#6fc2e0]">
+          <li className="w-[160px] h-[60px] flex justify-between items-center rounded-sm translate-x-[100px] hover:translate-x-[0px] duration-300 bg-[#6fc2e0]">
             <a
               className="flex justify-between items-center w-full"
               href="mailto:coreyloftus@gmail.com"
@@ -124,9 +145,9 @@ const Navbar = () => {
             </a>
           </li>
 
-          <li className="w-[160px] h-[60px] flex justify-between items-center translate-x-[100px] hover:translate-x-[0px] duration-300 bg-[#565f69]">
+          <li className="w-[160px] h-[60px] flex justify-between items-center rounded-sm translate-x-[100px] hover:translate-x-[0px] duration-300 bg-[#565f69]">
             <a
-              className="flex justify-between items-center w-full text-gray-100"
+              className="flex justify-between items-center w-full"
               href={resume}
               download
             >

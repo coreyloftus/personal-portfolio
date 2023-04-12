@@ -6,7 +6,7 @@ const About = () => {
     // About Container
     <div
       name="about"
-      className="w-full min-h-screen text-gray-100"
+      className="w-full min-h-screen text-gray-800 dark:text-gray-100"
     >
       <div className="flex flex-col justify-center items-center w-full h-screen">
         <div className="max-w-[1000px] w-full grid grid-cols-2 gap-8">
@@ -44,7 +44,7 @@ const About = () => {
         {/* Resume Button */}
         <div className="py-4">
           <a href={resume} download>
-            <button className="text-white rounded-sm group border-2 px-4 py-3 my-2 flex items-center hover:bg-red-500 hover:border-red-500">
+            <button className=" text-gray-800 dark:text-gray-100 hover:text-gray-100 rounded-sm group border-2 px-4 py-3 my-2 flex items-center hover:bg-red-500 hover:border-red-500">
               Download Resume
               <span className="group-hover:-translate-x-2 repeat duration-500">
                 {/* React icon arrow */}

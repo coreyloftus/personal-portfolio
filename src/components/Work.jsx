@@ -8,7 +8,7 @@ const workData = [
     techstack: "Next.js, TailwindCSS",
     image: images.cryolabz,
     frontend: "https://github.com/coreyloftus/CryoLabz",
-    deploy: "https://cryo-labz.vercel.app",
+    deploy: "https://www.cryolabz.net",
     tags: ["nextjs", "tailwindcss"],
   },
   {

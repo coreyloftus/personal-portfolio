@@ -52,10 +52,13 @@ const workData = [
 
 const Work = () => {
   return (
-    <div name="work" className="w-full min-h-screen text-gray-100">
+    <div
+      name="work"
+      className="w-full min-h-screen text-gray-800 dark:text-gray-100"
+    >
       <div className="max-w-[1000px] h-full mx-auto p-4 flex flex-col justify-center items-center">
         <div className="pb-2">
-          <p className="text-4xl font-bold inline border-b-4 text-gray-100 border-red-500">
+          <p className="text-4xl font-bold inline border-b-4 border-red-500">
             Work
           </p>
           <p className="py-6">{"// Check out some of my recent work."}</p>
@@ -65,7 +68,7 @@ const Work = () => {
           {/* each work item in the grid */}
           {workData.map((work) => {
             const list = (
-              <div className="shadow-lg rounded-md shadow-[#160a0b] hover:shadow-2xl hover:bg-red-900 hover:scale-105 duration-500">
+              <div className="shadow-lg rounded-md dark:shadow-[#160a0b] hover:shadow-2xl dark:hover:bg-red-900 hover:scale-105 duration-500">
                 <div className="">
                   <p className="text-2xl font-bold text-center py-2">
                     {work.title}
@@ -80,10 +83,10 @@ const Work = () => {
                     </div>
                   </div>
                   <div className="py-4">
-                    <p className="text-lg text-white tracking-wider text-center px-2">
+                    <p className="text-lg dark:text-gray-100 tracking-wider text-center px-2">
                       {work.subtitle}
                     </p>
-                    <p className="text-lg text-white tracking-wider text-center">
+                    <p className="text-lg dark:text-gray-100 tracking-wider text-center">
                       <span className="font-bold">
                         {work.tags.map((tag) => {
                           return <span className="px-1">#{tag} </span>
@@ -92,13 +95,13 @@ const Work = () => {
                     </p>
                     <div className="pt-8 text-center">
                       <a href={work.deploy} target="_blank" rel="noreferrer">
-                        <button className="text-center rounded-sm px-4 py-3 m-2 bg-white text-gray-700 font-bold text-lg hover:bg-red-500 ">
+                        <button className="text-center rounded-sm px-4 py-3 m-2 bg-gray-50 text-gray-700 font-bold text-lg hover:bg-red-500 hover:text-gray-100">
                           Live site
                         </button>
                       </a>
                       {work.repo ? (
                         <a href={work.repo} target="_blank" rel="noreferrer">
-                          <button className="text-center rounded-sm px-4 py-3 m-2 bg-white text-gray-700 font-bold text-lg hover:bg-red-500 hover:border-red-500">
+                          <button className="text-center rounded-sm px-4 py-3 m-2 bg-gray-50 text-gray-700 font-bold text-lg hover:bg-red-500 hover:border-red-500 hover:text-gray-100">
                             Code
                           </button>
                         </a>
@@ -109,14 +112,14 @@ const Work = () => {
                           target="_blank"
                           rel="noreferrer"
                         >
-                          <button className="text-center rounded-sm px-4 py-3 m-2 bg-white text-gray-700 font-bold text-lg hover:bg-red-500 hover:border-red-500">
+                          <button className="text-center rounded-sm px-4 py-3 m-2 bg-gray-50 text-gray-700 font-bold text-lg hover:bg-red-500 hover:border-red-500 hover:text-gray-100">
                             Frontend
                           </button>
                         </a>
                       ) : null}
                       {work.backend ? (
                         <a href={work.backend} target="_blank" rel="noreferrer">
-                          <button className="text-center rounded-sm px-4 py-3 m-2 bg-white text-gray-700 font-bold text-lg hover:bg-red-500 hover:border-red-500">
+                          <button className="text-center rounded-sm px-4 py-3 m-2 bg-gray-50 text-gray-700 font-bold text-lg hover:bg-red-500 hover:border-red-500 hover:text-gray-100">
                             Backend
                           </button>
                         </a>

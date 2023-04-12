@@ -39,9 +39,12 @@ const skillsData = [
 const Skills = () => {
   return (
     <>
-      <div className="w-full min-h-screen text-gray-100">
+      <div className="w-full min-h-screen text-gray-800 dark:text-gray-100">
         {/* container */}
-        <div name="skills" className="max-w-[1000px] h-full md:h-screen mx-auto p-4 flex flex-col justify-center items-center">
+        <div
+          name="skills"
+          className="max-w-[1000px] h-full md:h-screen mx-auto p-4 flex flex-col justify-center items-center"
+        >
           <div>
             <p className="text-4xl font-bold inline border-b-4 border-red-500">
               Experience
@@ -52,7 +55,7 @@ const Skills = () => {
           </div>
           <div className="w-full grid grid-cols-2 sm:grid-cols-4 gap-6 text-center py-6">
             {skillsData.map((item) => (
-              <div className="shadow-lg rounded-md shadow-[#160a0b] hover:bg-red-900 hover:scale-105 duration-500 p-2">
+              <div className="shadow-lg rounded-md shadow-[#160a0b] dark:hover:bg-red-900 hover:scale-105 duration-500 p-2">
                 <img
                   className="w-20 mx-auto pb-2"
                   src={item.image}

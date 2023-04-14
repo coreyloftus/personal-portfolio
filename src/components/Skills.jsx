@@ -55,7 +55,10 @@ const Skills = () => {
           </div>
           <div className="w-full grid grid-cols-2 sm:grid-cols-4 gap-6 text-center py-6">
             {skillsData.map((item) => (
-              <div className="shadow-lg rounded-md shadow-[#160a0b] dark:hover:bg-red-900 hover:scale-105 duration-500 p-2">
+              <div
+                className="shadow-lg rounded-md shadow-[#160a0b] dark:hover:bg-red-900 hover:scale-105 duration-500 p-2"
+                key={item.name}
+              >
                 <img
                   className="w-20 mx-auto pb-2"
                   src={item.image}

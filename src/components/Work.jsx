@@ -68,7 +68,10 @@ const Work = () => {
           {/* each work item in the grid */}
           {workData.map((work) => {
             const list = (
-              <div className="shadow-lg rounded-md dark:shadow-[#160a0b] hover:shadow-2xl dark:hover:bg-red-900 hover:scale-105 duration-500">
+              <div
+                className="shadow-lg rounded-md dark:shadow-[#160a0b] hover:shadow-2xl dark:hover:bg-red-900 hover:scale-105 duration-500"
+                key={work.title}
+              >
                 <div className="">
                   <p className="text-2xl font-bold text-center py-2">
                     {work.title}
@@ -89,7 +92,11 @@ const Work = () => {
                     <p className="text-lg dark:text-gray-100 tracking-wider text-center">
                       <span className="font-bold">
                         {work.tags.map((tag) => {
-                          return <span className="px-1">#{tag} </span>
+                          return (
+                            <span key={tag} className="px-1">
+                              #{tag}{" "}
+                            </span>
+                          )
                         })}
                       </span>
                     </p>

@@ -1,5 +1,6 @@
-import React from "react"
+import React, { useState, useEffect } from "react"
 import images from "../Assets/images/images"
+import { useInView } from "react-intersection-observer"
 
 const workData = [
   {
@@ -51,13 +52,25 @@ const workData = [
 ]
 
 const Work = () => {
+  const [isVisible, setIsVisible] = useState(false)
+  const { ref: workRef, inView: workInView } = useInView({ threshold: 0.1 })
+  useEffect(() => {
+    if (workInView) {
+      setIsVisible(true)
+    }
+  }, [workInView])
   return (
     <div
       name="work"
       className="w-full min-h-screen text-gray-800 dark:text-gray-100"
+      ref={workRef}
     >
-      <div className="max-w-[1000px] h-full mx-auto p-4 flex flex-col justify-center items-center">
-        <div className="pb-2">
+      <div
+        className={`max-w-[1000px] h-full mx-auto p-4 flex flex-col justify-center items-center`}
+      >
+        <div
+          className={`pb-2 ${isVisible ? `fade-up duration-500` : `opacity-0`}`}
+        >
           <p className="text-4xl font-bold inline border-b-4 border-red-500">
             Work
           </p>
@@ -69,7 +82,9 @@ const Work = () => {
           {workData.map((work) => {
             const list = (
               <div
-                className="shadow-lg rounded-md dark:shadow-[#160a0b] hover:shadow-2xl dark:hover:bg-red-900 hover:scale-105 duration-500"
+                className={`shadow-lg rounded-md dark:shadow-[#160a0b] hover:shadow-2xl dark:hover:bg-red-900 hover:scale-105 duration-500 ${
+                  isVisible ? `fade-up duration-500` : `opacity-0`
+                }`}
                 key={work.title}
               >
                 <div className="">

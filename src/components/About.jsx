@@ -1,32 +1,54 @@
 import resume from "../Assets/files/Corey Loftus - Software Engineer.pdf"
 import { HiArrowNarrowLeft } from "react-icons/hi"
+import { useState, useEffect, useRef } from "react"
+import { useInView } from "react-intersection-observer"
 
 const About = () => {
+  const { ref: aboutRef, inView: aboutInView } = useInView({ threshold: 0.5 })
+  const [isVisible, setIsVisible] = useState(false)
+
+  useEffect(() => {
+    if (aboutInView) {
+      setIsVisible(true)
+    }
+  }, [aboutInView])
   return (
     // About Container
     <div
       name="about"
       className={`w-full min-h-screen text-gray-800 dark:text-gray-100`}
+      ref={aboutRef}
     >
       <div
         className={`flex flex-col justify-center items-center w-full h-screen`}
       >
         <div className="max-w-[1000px] w-full grid grid-cols-2 gap-8">
-          <div className="sm:text-right pb-8 pl-4">
+          <div
+            className={`sm:text-right pb-8 pl-4 ${
+              isVisible ? "slide-in-from-left" : "opacity-0"
+            }`}
+          >
             <p className="text-4xl font-bold inline border-b-4 border-red-500">
               About
             </p>
           </div>
-          <div></div>
         </div>
         {/* Grid Container */}
         <div className="max-w-[1000px] w-full grid sm:grid-cols-2 gap-8 px-4">
           {/* Grid Item 1 */}
-          <div className="sm:text-right text-4xl font-bold">
+          <div
+            className={`sm:text-right text-4xl font-bold ${
+              isVisible ? "slide-in-from-left" : "opacity-0"
+            }`}
+          >
             <p>Hi there, I’m Corey.</p>
           </div>
           {/* Grid Item 2 */}
-          <div>
+          <div
+            className={` ${
+              isVisible ? "slide-in-from-right" : "opacity-0"
+            } animation-3000`}
+          >
             <div className="py-2">
               I’m a Full-Stack Developer. As a seasoned start-up founder, I’m
               adept at combining people skills and technical expertise with

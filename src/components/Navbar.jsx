@@ -14,7 +14,7 @@ const Navbar = () => {
   return (
     <div className="box-border top-0 w-screen p-2 font-bold text-gray-800 dark:text-gray-100 h-[10vh]">
       <div className="flex items-center justify-between relative p-2 rounded-lg">
-        {/* logo image */}
+        {/* navbar left side -- logo image */}
         <Link
           to="home"
           smooth={true}
@@ -30,7 +30,7 @@ const Navbar = () => {
           </div>
         </Link>
 
-        {/* menu */}
+        {/* navbar center -- menu */}
         <ul className="hidden md:flex text-xl">
           <Link to="about" smooth={true} duration={500}>
             <div className="border-b-2 border-transparent hover:border-gray-800 dark:hover:border-gray-100 p-2">
@@ -53,6 +53,8 @@ const Navbar = () => {
             </div>
           </Link>
         </ul>
+        
+        {/* navbar right -- buttons */}
         <div className="flex items-center">
           {/* dark mode button */}
 

@@ -1,5 +1,6 @@
-import React from "react"
+import React, { useState, useEffect } from "react"
 import images from "../Assets/images/images"
+import { useInView } from "react-intersection-observer"
 
 const workData = [
   {
@@ -8,7 +9,7 @@ const workData = [
     techstack: "Next.js, TailwindCSS",
     image: images.cryolabz,
     frontend: "https://github.com/coreyloftus/CryoLabz",
-    deploy: "https://cryo-labz.vercel.app",
+    deploy: "https://www.cryolabz.net",
     tags: ["nextjs", "tailwindcss"],
   },
   {
@@ -51,13 +52,25 @@ const workData = [
 ]
 
 const Work = () => {
+  const [isVisible, setIsVisible] = useState(false)
+  const { ref: workRef, inView: workInView } = useInView({ threshold: 0.1 })
+  useEffect(() => {
+    if (workInView) {
+      setIsVisible(true)
+    }
+  }, [workInView])
   return (
     <div
       name="work"
       className="w-full min-h-screen text-gray-800 dark:text-gray-100"
+      ref={workRef}
     >
-      <div className="max-w-[1000px] h-full mx-auto p-4 flex flex-col justify-center items-center">
-        <div className="pb-2">
+      <div
+        className={`max-w-[1000px] h-full mx-auto p-4 flex flex-col justify-center items-center`}
+      >
+        <div
+          className={`pb-2 ${isVisible ? `fade-up duration-500` : `opacity-0`}`}
+        >
           <p className="text-4xl font-bold inline border-b-4 border-red-500">
             Work
           </p>
@@ -68,7 +81,12 @@ const Work = () => {
           {/* each work item in the grid */}
           {workData.map((work) => {
             const list = (
-              <div className="shadow-lg rounded-md dark:shadow-[#160a0b] hover:shadow-2xl dark:hover:bg-red-900 hover:scale-105 duration-500">
+              <div
+                className={`shadow-lg rounded-md dark:shadow-[#160a0b] hover:shadow-2xl dark:hover:bg-red-900 hover:scale-105 duration-500 ${
+                  isVisible ? `fade-up duration-500` : `opacity-0`
+                }`}
+                key={work.title}
+              >
                 <div className="">
                   <p className="text-2xl font-bold text-center py-2">
                     {work.title}
@@ -89,7 +107,11 @@ const Work = () => {
                     <p className="text-lg dark:text-gray-100 tracking-wider text-center">
                       <span className="font-bold">
                         {work.tags.map((tag) => {
-                          return <span className="px-1">#{tag} </span>
+                          return (
+                            <span key={tag} className="px-1">
+                              #{tag}{" "}
+                            </span>
+                          )
                         })}
                       </span>
                     </p>

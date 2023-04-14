@@ -1,5 +1,7 @@
-import React, { useRef, useState } from "react"
+import React, { useRef, useState, useEffect } from "react"
 import emailjs from "@emailjs/browser"
+import { useInView } from "react-intersection-observer"
+import { HiArrowNarrowLeft } from "react-icons/hi"
 
 const Contact = (props) => {
   const [formData, setFormData] = useState({
@@ -37,10 +39,20 @@ const Contact = (props) => {
     setFormData({ name: "", email: "", message: "" })
   }
 
+  const [isVisible, setIsVisible] = useState(false)
+  const { ref: contactRef, inView: contactInView } = useInView({
+    threshold: 0.1,
+  })
+  useEffect(() => {
+    if (contactInView) {
+      setIsVisible(true)
+    }
+  }, [contactInView])
   return (
     <div
       name="contact"
       className="w-full h-screen flex text-gray-800 dark:text-gray-100 justify-center items-center pt-8"
+      ref={contactRef}
     >
       <div className="pt-8">
         <div className="max-w-[1000px] h-full mx-auto flex flex-col justify-center items-center px-4 py-4">
@@ -51,9 +63,18 @@ const Contact = (props) => {
             className="flex flex-col max-w-[600px]"
           >
             <div className="pb-4">
-              <p className="text-4xl font-bold inline border-b-4 border-red-500">
-                Contact
-              </p>
+              <div className="flex align-items">
+                <p className="text-4xl font-bold inline border-b-4 border-red-500">
+                  Contact
+                </p>
+                <div
+                  className={`pl-6  ${
+                    isVisible ? `slide-in-from-right` : `opacity-0`
+                  }`}
+                >
+                  <HiArrowNarrowLeft size={40} />
+                </div>
+              </div>
               <p className=" py-4">
                 // Submit the form below to message me, or email me at:{" "}
                 <a href="mailto:coreyloftus@gmail.com">coreyloftus@gmail.com</a>

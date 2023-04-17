@@ -1,6 +1,12 @@
 import React, { useState } from "react"
 import Logo from "../Assets/images/icons8-cardinal-64.png"
-import { FaBars, FaTimes, FaGithub, FaLinkedin } from "react-icons/fa"
+import {
+  FaBars,
+  FaTimes,
+  FaGithub,
+  FaLinkedin,
+  FaYoutube,
+} from "react-icons/fa"
 import { HiOutlineMail } from "react-icons/hi"
 import { BsFillPersonLinesFill } from "react-icons/bs"
 import resume from "../Assets/files/Corey Loftus - Software Engineer.pdf"
@@ -36,22 +42,22 @@ const Navbar = () => {
         {/* navbar center -- menu */}
         <ul className="hidden md:flex text-xl">
           <Link to="about" smooth={true} duration={500}>
-            <div className="border-b-2 border-transparent hover:border-gray-800 dark:hover:border-gray-100 p-2">
+            <div className="border-b-2 border-transparent hover:border-gray-800 dark:hover:border-gray-100 dark:hover:text-red-500 p-2">
               <li>About</li>
             </div>
           </Link>
           <Link to="skills" smooth={true} duration={500}>
-            <div className="border-b-2 border-transparent hover:border-gray-800 dark:hover:border-gray-100 p-2">
+            <div className="border-b-2 border-transparent hover:border-gray-800 dark:hover:border-gray-100 dark:hover:text-red-500 p-2">
               <li>Skills</li>
             </div>
           </Link>
           <Link to="work" smooth={true} duration={500}>
-            <div className="border-b-2 border-transparent hover:border-gray-800 dark:hover:border-gray-100 p-2">
+            <div className="border-b-2 border-transparent hover:border-gray-800 dark:hover:border-gray-100 dark:hover:text-red-500 p-2">
               <li>Work</li>
             </div>
           </Link>
           <Link to="contact" smooth={true} duration={500}>
-            <div className="border-b-2 border-transparent hover:border-gray-800 dark:hover:border-gray-100 p-2">
+            <div className="border-b-2 border-transparent hover:border-gray-800 dark:hover:border-gray-100 dark:hover:text-red-500 p-2">
               <li>Contact</li>
             </div>
           </Link>
@@ -137,6 +143,17 @@ const Navbar = () => {
             >
               <FaGithub size={30} />
               <span>Github</span>
+            </a>
+          </li>
+          <li className="w-[160px] h-[60px] flex justify-between items-center rounded-sm translate-x-[100px] hover:translate-x-[0px] duration-300 bg-[#ff0000]">
+            <a
+              className="flex justify-between items-center w-full"
+              href="https://www.youtube.com/channel/UCZnh34FiIcv3fPBicYBdpTQ"
+              target="_blank"
+              rel="noreferrer"
+            >
+              <FaYoutube size={30} />
+              <span>YouTube</span>
             </a>
           </li>
 

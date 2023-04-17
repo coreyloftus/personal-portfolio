@@ -39,6 +39,29 @@
     transform: translateX(0);
   }
 }
+.bounce-arrow {
+  animation: bounce ease-in-out infinite 2s;
+}
+@keyframes slide-in-from-right {
+  0% {
+    transform: translateX(100%);
+  }
+  50% {
+    transform: translateX(-10px);
+  }
+  100% {
+    transform: translateX(0);
+  }
+}
+@keyframes bounce {
+  0%,
+  100% {
+    transform: translateX(0);
+  }
+  50% {
+    transform: translateX(-10px);
+  }
+}
 .slide-out-to-left {
   animation: slide-out-to-left ease-in-out 1;
 }

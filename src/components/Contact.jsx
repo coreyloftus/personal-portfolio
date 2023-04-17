@@ -57,7 +57,7 @@ const Contact = (props) => {
       <div className="pt-8">
         <div className="max-w-[1000px] h-full mx-auto flex flex-col justify-center items-center px-4 py-4">
           <form
-            re={form}
+            ref={form}
             onSubmit={handleSubmit}
             action=""
             className="flex flex-col max-w-[600px]"

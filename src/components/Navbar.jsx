@@ -12,7 +12,10 @@ const Navbar = () => {
   const handleClick = () => setNav(!nav)
 
   return (
-    <div className="box-border top-0 w-screen p-2 font-bold text-gray-800 dark:text-gray-100 h-[10vh]">
+    <div
+      className="box-border top-0 w-screen p-2 font-bold text-gray-800 dark:text-gray-100 h-[10vh]"
+      id="top"
+    >
       <div className="flex items-center justify-between relative p-2 rounded-lg">
         {/* navbar left side -- logo image */}
         <Link
@@ -53,7 +56,7 @@ const Navbar = () => {
             </div>
           </Link>
         </ul>
-        
+
         {/* navbar right -- buttons */}
         <div className="flex items-center">
           {/* dark mode button */}

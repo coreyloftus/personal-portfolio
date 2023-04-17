@@ -2,6 +2,7 @@ import React from "react"
 import { Link } from "react-scroll"
 import { AiOutlineMail } from "react-icons/ai"
 import { FaLinkedin, FaGithub } from "react-icons/fa"
+import { HiArrowUp } from "react-icons/hi"
 
 const Footer = () => {
   return (
@@ -9,6 +10,18 @@ const Footer = () => {
       name="footer"
       className="text-center w-full h-[10%]] dark:text-gray-100 justify-center items-center py-8"
     >
+      <Link
+        to="top"
+        smooth={true}
+        className="cursor-pointer hover:text-gray-400"
+      >
+        <div className="flex justify-center group">
+          <span className="group-hover:-translate-y-2 duration-500">
+            <HiArrowUp size={20} />
+          </span>
+          <p className="pl-4">Back to top</p>
+        </div>
+      </Link>
       <div className="flex p-4 justify-evenly">
         <div className="grid grid-cols-3 place-items-center gap-4 md:gap-10">
           <a
@@ -38,7 +51,7 @@ const Footer = () => {
         <div>
           <ul className="text-lg">
             <Link
-              to="top"
+              to="about"
               smooth={true}
               className="cursor-pointer hover:text-gray-400"
             >

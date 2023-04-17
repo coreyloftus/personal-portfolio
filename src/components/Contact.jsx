@@ -63,14 +63,14 @@ const Contact = (props) => {
             className="flex flex-col"
           >
             <div className="pb-4">
-              <div className="flex align-items">
+              <div className="flex align-items group">
                 <p className="text-4xl font-bold inline border-b-4 border-red-500">
                   Contact
                 </p>
                 <div
-                  className={`pl-6  ${
-                    isVisible ? `slide-in-from-right` : `opacity-0`
-                  }`}
+                  className={`pl-6 group-hover:-translate-x-4 duration-500 ${
+                    isVisible ? `bounce-arrow` : `opacity-0`
+                  } bounce`}
                 >
                   <HiArrowNarrowLeft size={40} />
                 </div>

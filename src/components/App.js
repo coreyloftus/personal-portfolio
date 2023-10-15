@@ -5,35 +5,32 @@ import Home from "./Home"
 import Navbar from "./Navbar"
 import Skills from "./Skills"
 import Work from "./Work"
-import { useLocation } from "react-router-dom"
-
+import Theater from "./Theater"
+import {
+  BrowserRouter as Router,
+  Route,
+  Routes,
+  Outlet,
+} from "react-router-dom"
 
 function App() {
-
-const location=useLocation()
-const queryParams = new URLSearchParams(location.search)
-
   return (
-    <div className="dark:bg-gray-900 bg-gray-100">
-      <div className="dark:bg-red-900/40">
-        <Navbar />
-        <Home />
-        {/* <div
-          className={`${isVisible ? "fade-up" : "opacity-0"}`}
-          ref={aboutRef}
-        > */}
-        <About />
-        {/* </div> */}
-
-        <Skills />
-
-        <Work />
-
-        <Contact />
-
-        <Footer />
+    <Router>
+      <div className="dark:bg-gray-900 bg-gray-100">
+        <div className="dark:bg-red-900/40">
+          <Navbar />
+          <Home />
+          <About />
+          <Skills />
+          <Work />
+          <Contact />
+          <Footer />
+          <Routes>
+            <Route path="/theater" element={<Theater />} />
+          </Routes>
+        </div>
       </div>
-    </div>
+    </Router>
   )
 }
 

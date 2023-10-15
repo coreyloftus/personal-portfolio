@@ -1,42 +1,7 @@
 import React from "react"
-import skillsImages from "../Assets/images/images"
+import { skillsImages } from "../Assets/images/images"
 import { useState, useEffect } from "react"
 import { useInView } from "react-intersection-observer"
-
-const skillsData = [
-  {
-    name: "HTML",
-    image: skillsImages.html,
-  },
-  {
-    name: "CSS",
-    image: skillsImages.css,
-  },
-  {
-    name: "JavaScript",
-    image: skillsImages.javascript,
-  },
-  {
-    name: "React",
-    image: skillsImages.react,
-  },
-  {
-    name: "Python",
-    image: skillsImages.python,
-  },
-  {
-    name: "Express",
-    image: skillsImages.express,
-  },
-  {
-    name: "MongoDB",
-    image: skillsImages.mongo,
-  },
-  {
-    name: "PostGres",
-    image: skillsImages.postgres,
-  },
-]
 
 const Skills = () => {
   const [isVisible, setIsVisible] = useState(false)
@@ -68,7 +33,7 @@ const Skills = () => {
               Experience
             </p>
             <p className="py-4">
-              // These are the technologies I've worked with:{" "}
+              {"// These are the technologies I've worked with: "}
             </p>
           </div>
           <div
@@ -76,7 +41,7 @@ const Skills = () => {
               isVisible ? `fade-up` : `opacity-0`
             }`}
           >
-            {skillsData.map((item) => (
+            {skillsImages.map((item) => (
               <div
                 className="shadow-lg rounded-md shadow-[#160a0b] dark:hover:bg-red-900 hover:scale-105 duration-500 p-2"
                 key={item.name}
@@ -84,7 +49,7 @@ const Skills = () => {
                 <img
                   className="w-20 mx-auto pb-2"
                   src={item.image}
-                  alt="{skill.name} icon"
+                  alt={`${item.name} icon`}
                 />
                 <p>{item.name}</p>
               </div>

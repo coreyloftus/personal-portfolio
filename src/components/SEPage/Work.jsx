@@ -1,13 +1,18 @@
 import React, { useState, useEffect } from "react"
-import images from "../Assets/images/images"
+import { workImages } from "../../Assets/images/images"
 import { useInView } from "react-intersection-observer"
+
+const getImageByName = (name) => {
+  const imageObj = workImages.find((image) => image.name === name)
+  return imageObj ? imageObj.image : null
+}
 
 const workData = [
   {
     title: "CryoLabz Website",
     subtitle: "A website for a cryotherapy clinic",
     techstack: "Next.js, TailwindCSS",
-    image: images.cryolabz,
+    image: getImageByName("Cryolabz"),
     frontend: "https://github.com/coreyloftus/CryoLabz",
     deploy: "https://www.cryolabz.net",
     tags: ["nextjs", "tailwindcss"],
@@ -16,7 +21,7 @@ const workData = [
     title: "CSS Clips",
     subtitle: "Discover and create vanilla HTML/CSS animations",
     techstack: "Django, Python, Bulma",
-    image: images.cssclips,
+    image: getImageByName("CSSClips"),
     repo: "https://github.com/coreyloftus/css-clips",
     deploy: "http://css-clips.herokuapp.com",
     tags: ["django", "python", "bulma"],
@@ -25,7 +30,7 @@ const workData = [
     title: "ShoeString",
     subtitle: "A guest book for the world",
     techstack: "React, Express, MongoDB, TailwindCSS",
-    image: images.shoestring,
+    image: getImageByName("ShoeString"),
     frontend: "https://github.com/Calathea-Z/ShoeString",
     backend: "https://github.com/coreyloftus/shoe-string-be-dev",
     deploy: "https://shoestring.netlify.app",
@@ -35,7 +40,7 @@ const workData = [
     title: "Brewery Buddy",
     subtitle: "Find local brews via the OpenBrewery API",
     techstack: "React, Sass",
-    image: images.brewerybuddy,
+    image: getImageByName("BreweryBuddy"),
     frontend: "https://github.com/jordbort/project-2-brewery-app",
     deploy: "https://brewerybuddy.netlify.app",
     tags: ["react", "sass"],
@@ -44,7 +49,7 @@ const workData = [
     title: "Simon by Corey",
     subtitle: "the classic game in vanilla JS",
     techstack: "HTML, CSS, JS",
-    image: images.simonbycorey,
+    image: getImageByName("SimonByCorey"),
     frontend: "https://github.com/coreyloftus/simon-by-corey",
     deploy: "https://simon-by-corey.netlify.app/",
     tags: ["html", "css", "js"],

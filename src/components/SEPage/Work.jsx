@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from "react"
-import { workImages } from "../Assets/images/images"
+import { workImages } from "../../Assets/images/images"
 import { useInView } from "react-intersection-observer"
 
 const getImageByName = (name) => {

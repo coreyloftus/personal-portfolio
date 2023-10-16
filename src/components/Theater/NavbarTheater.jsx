@@ -11,7 +11,7 @@ import { HiOutlineMail } from "react-icons/hi"
 import { BsFillPersonLinesFill } from "react-icons/bs"
 import resume from "../Assets/files/Corey Loftus - Software Engineer.pdf"
 import { Link } from "react-scroll"
-import { DarkMode } from "./DarkMode"
+import { DarkMode } from "../DarkMode"
 
 const Navbar = () => {
   const [nav, setNav] = useState(false)

@@ -1,5 +1,5 @@
 import React from "react"
-import { skillsImages } from "../Assets/images/images"
+import { skillsImages } from "../../Assets/images/images"
 import { useState, useEffect } from "react"
 import { useInView } from "react-intersection-observer"
 

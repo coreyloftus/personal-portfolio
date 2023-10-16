@@ -1,12 +1,6 @@
 import React, { useState } from "react"
 // import Logo from "../../Assets/images/icons8-cardinal-64.png"
-import {
-  FaBars,
-  FaTimes,
-  FaGithub,
-  FaLinkedin,
-  FaYoutube,
-} from "react-icons/fa"
+import { FaBars, FaTimes, FaYoutube } from "react-icons/fa"
 import { HiOutlineMail } from "react-icons/hi"
 import { BsFillPersonLinesFill } from "react-icons/bs"
 import resume from "../../Assets/files/Corey Loftus - Software Engineer.pdf"
@@ -124,28 +118,6 @@ const Navbar = () => {
       {/* Social Icons */}
       <div className="hidden fixed lg:flex flex-col top-[15%] right-0 text-gray-100">
         <ul>
-          <li className="w-[160px] h-[60px] flex justify-between items-center rounded-sm translate-x-[100px] hover:translate-x-[0px] duration-300 bg-blue-600">
-            <a
-              className="flex justify-between items-center w-full"
-              href="https://www.linkedin.com/in/corey-loftus/"
-              target="_blank"
-              rel="noreferrer"
-            >
-              <FaLinkedin size={30} />
-              <span>Linkedin </span>
-            </a>
-          </li>
-          <li className="w-[160px] h-[60px] flex justify-between items-center rounded-sm translate-x-[100px] hover:translate-x-[0px] duration-300 bg-[#333333]">
-            <a
-              className="flex justify-between items-center w-full"
-              href="https://github.com/coreyloftus"
-              target="_blank"
-              rel="noreferrer"
-            >
-              <FaGithub size={30} />
-              <span>Github</span>
-            </a>
-          </li>
           <li className="w-[160px] h-[60px] flex justify-between items-center rounded-sm translate-x-[100px] hover:translate-x-[0px] duration-300 bg-[#ff0000]">
             <a
               className="flex justify-between items-center w-full"

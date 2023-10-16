@@ -13,7 +13,7 @@ const Navbar = () => {
 
   return (
     <div
-      className="box-border top-0 w-screen p-2 font-bold text-gray-800 dark:text-gray-100 h-[10vh]"
+      className="box-border top-0 w-screen p-2 font-bold text-theater-text-primary h-[10vh]"
       id="top"
     >
       <div className="flex items-center justify-between relative p-2 rounded-lg">
@@ -25,33 +25,34 @@ const Navbar = () => {
           onClick={() => setNav(false)}
           className="cursor-pointer"
         >
-          <div className="flex items-center">
+          <div className="flex items-center justify-evenly">
             {/* <img src={Logo} alt="Logo" style={{ width: "50px" }} /> */}
-            <span className="pl-2 text-2xl font-bold text-theater-text-secondary">
-              Actor | Singer | Dancer
-            </span>
+            <p className="pl-2 text-2xl font-bold text-theater-text-secondary">
+              Corey Loftus
+            </p>
+            <p className="md:hidden text-lg pl-2">-- Actor | Singer | Dancer</p>
           </div>
         </Link>
 
         {/* navbar center -- menu */}
         <ul className="hidden md:flex text-xl">
           <Link to="about" smooth={true} duration={500}>
-            <div className="border-b-2 border-transparent hover:border-gray-800 dark:hover:border-gray-100 dark:hover:text-theater-text-callout p-2">
+            <div className="border-b-2 border-transparent hover:border-gray-100 hover:text-theater-text-callout p-2">
               <li>About</li>
             </div>
           </Link>
           <Link to="skills" smooth={true} duration={500}>
-            <div className="border-b-2 border-transparent hover:border-gray-800 dark:hover:border-gray-100 dark:hover:text-theater-text-callout p-2">
+            <div className="border-b-2 border-transparent hover:border-gray-100 hover:text-theater-text-callout p-2">
               <li>Media</li>
             </div>
           </Link>
           <Link to="work" smooth={true} duration={500}>
-            <div className="border-b-2 border-transparent hover:border-gray-800 dark:hover:border-gray-100 dark:hover:text-theater-text-callout p-2">
+            <div className="border-b-2 border-transparent hover:border-gray-100 hover:text-theater-text-callout p-2">
               <li>Resume</li>
             </div>
           </Link>
           <Link to="contact" smooth={true} duration={500}>
-            <div className="border-b-2 border-transparent hover:border-gray-800 dark:hover:border-gray-100 dark:hover:text-theater-text-callout p-2">
+            <div className="border-b-2 border-transparent hover:border-gray-100 hover:text-theater-text-callout p-2">
               <li>Contact</li>
             </div>
           </Link>
@@ -80,10 +81,10 @@ const Navbar = () => {
 
       {/* mobile menu */}
       {nav && (
-        <div className="mt-2 bg-gray-200 dark:bg-theater-bg-teal z-30 relative">
+        <div className="mt-2 bg-theater-bg-teal z-30 relative">
           <ul className={!nav ? "hidden" : "w-full mt-2 p-2 text-center"}>
             <Link to="about" smooth={true} duration={500} onClick={handleClick}>
-              <li className="py-2 text-xl hover:bg-gray-300 dark:hover:bg-theater-text-callout border-b-2 border-theater-text-callout">
+              <li className="py-2 text-xl hover:bg-theater-text-callout border-b-2 border-theater-text-callout">
                 About
               </li>
             </Link>
@@ -93,12 +94,12 @@ const Navbar = () => {
               duration={500}
               onClick={handleClick}
             >
-              <li className="py-2 text-xl hover:bg-gray-300 dark:hover:bg-theater-text-callout border-b-2 border-theater-text-callout">
+              <li className="py-2 text-xl hover:bg-theater-text-callout border-b-2 border-theater-text-callout">
                 Media
               </li>
             </Link>
             <Link to="work" smooth={true} duration={500} onClick={handleClick}>
-              <li className="py-2 text-xl hover:bg-gray-300 dark:hover:bg-theater-text-callout border-b-2 border-theater-text-callout">
+              <li className="py-2 text-xl hover:bg-theater-text-callout border-b-2 border-theater-text-callout">
                 Resume
               </li>
             </Link>
@@ -108,7 +109,7 @@ const Navbar = () => {
               duration={500}
               onClick={handleClick}
             >
-              <li className="py-2 text-xl hover:bg-gray-300 dark:hover:bg-theater-text-callout">
+              <li className="py-2 text-xl hover:bg-theater-text-callout">
                 Contact
               </li>
             </Link>

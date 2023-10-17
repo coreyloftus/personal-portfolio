@@ -6,47 +6,45 @@ import Navbar from "./SEPage/Navbar"
 import Skills from "./SEPage/Skills"
 import Work from "./SEPage/Work"
 import Theater from "./Theater"
-import {
-  BrowserRouter as Router,
-  Route,
-  Routes,
-} from "react-router-dom"
+import { BrowserRouter as Router, Route, Routes } from "react-router-dom"
+import Media from "./Theater/Media"
 
 function SEPage() {
-  return (
-    <>
-      <Navbar />
-      <Home />
-      <About />
-      <Skills />
-      <Work />
-      <Contact />
-      <Footer />
-    </>
-  )
+    return (
+        <>
+            <Navbar />
+            <Home />
+            <About />
+            <Skills />
+            <Work />
+            <Contact />
+            <Footer />
+        </>
+    )
 }
 
 function TheaterPage() {
-  return (
-    <>
-      <Theater />
-    </>
-  )
+    return (
+        <>
+            <Theater />
+            <Media />
+        </>
+    )
 }
 
 function App() {
-  return (
-    <Router>
-      <div className="dark:bg-gray-900 bg-gray-100">
-        <div className="dark:bg-red-900/40">
-          <Routes>
-            <Route path="/" element={<SEPage />} />
-            <Route path="/theater" element={<TheaterPage />} />
-          </Routes>
-        </div>
-      </div>
-    </Router>
-  )
+    return (
+        <Router>
+            <div className="dark:bg-gray-900 bg-gray-100">
+                <div className="dark:bg-red-900/40">
+                    <Routes>
+                        <Route path="/" element={<SEPage />} />
+                        <Route path="/theater" element={<TheaterPage />} />
+                    </Routes>
+                </div>
+            </div>
+        </Router>
+    )
 }
 
 export default App

@@ -1,47 +1,39 @@
-import React from "react"
+import React, { useEffect, useState } from "react"
 import Grid from "@mui/material/Grid"
 import Paper from "@mui/material/Paper"
-require("dotenv").config()
 
-const cloudinary = require("cloudinary").v2
-// const cld = new Cloudinary({ cloud: { cloudName: "dvedjgns8" } })
-// const imageUrls = [
-//     "https://res.cloudinary.com/demo/image/upload/sample.jpg",
-//     "https://res.cloudinary.com/demo/image/upload/sample1.jpg",
-//     "https://res.cloudinary.com/demo/image/upload/sample2.jpg"
-//     // ... more URLs
-// ]
-cloudinary.config({
-    cloud_name: "dvedjgns8",
-    api_key: "932338252929798",
-    api_secret: "1TRfbyThx3Y6cWurH89K0Kjj_U0"
-})
-async function fetchImagesFromAlbum(folder) {
-    try {
-        const { resources } = await cloudinary.search
-            .expression(`folder:${folder}`)
-            .max_results(30)
-            .execute()
-
-        const imageUrls = resources.map((image) => image.secure_url)
-
-        return imageUrls
-    } catch (error) {
-        console.error(error)
-        return []
-    }
-}
-
-// Usage
-fetchImagesFromAlbum("theater")
-    .then((urls) => {
-        console.log(urls)
-    })
-    .catch((err) => {
-        console.error(err)
-    })
+// const cloudinary = require("cloudinary-core")
+// cloudinary.config({
+//     cloud_name: "dvedjgns8",
+//     api_key: "932338252929798",
+//     api_secret: "1TRfbyThx3Y6cWurH89K0Kjj_U0"
+// })
 
 const ImageGrid = () => {
+    // const [loading, setLoading] = useState(true)
+    // useEffect(() => {
+    //     setLoading(false)
+    // }, [loading])
+    // let imageUrls = async () => {
+    //     try {
+    //         cloudinary.v2.api.resources(
+    //             { type: "upload", prefix: "theater/", max_results: 50 },
+    //             function (error, result) {
+    //                 if (error) {
+    //                     console.error("Error fetching images:", error)
+    //                 } else {
+    //                     return result.resources.map((item) =>
+    //                         cloudinary.url(item.public_id)
+    //                     )
+    //                 }
+    //             }
+    //         )
+    //     } catch (error) {
+    //         console.log(error)
+    //     }
+    // }
+
+    // console.log(imageUrls)
     return (
         <Grid container spacing={3}>
             {/* {imageUrls.map((url, index) => (

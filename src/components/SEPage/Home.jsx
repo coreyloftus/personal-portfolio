@@ -1,6 +1,7 @@
 import React from "react"
 import { HiArrowNarrowRight } from "react-icons/hi"
 import { Link } from "react-scroll"
+// import {Link as RouterLink} from 'react-router-dom'
 const Home = () => {
   return (
     <div name="home" className="h-[90vh] flex items-center">

@@ -2,13 +2,6 @@ import React, { useEffect, useState } from "react"
 import Grid from "@mui/material/Grid"
 import Paper from "@mui/material/Paper"
 
-// const cloudinary = require("cloudinary-core")
-// cloudinary.config({
-//     cloud_name: "dvedjgns8",
-//     api_key: "932338252929798",
-//     api_secret: "1TRfbyThx3Y6cWurH89K0Kjj_U0"
-// })
-
 const ImageGrid = () => {
     // const [loading, setLoading] = useState(true)
     // useEffect(() => {

@@ -82,7 +82,9 @@
             "postcss": "$postcss"
         },
         "webpack-dev-server": {
-            "ws": "^8.23.0"
-        }
+            "ws": "^8.23.0",
+            "webpack-dev-middleware": "^7.4.6"
+        },
+        "underscore": "^1.13.8"
     }
 }
